@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat';
+<<<<<<< HEAD
     --responsive: calc((var(--min-font) * 1px) + 
     (var(--max-font) - var(--min-font)) * (
     (100vw - 420px) / (1200 - 420))); 
@@ -72,10 +73,31 @@ h2 {
     font-family: var(--main-font);
     font-size: var(--responsive);
 }
+=======
+  }
+
+/* body {
+    margin: 0 5%;
+    /* margin-top: 4rem; */
+
+
+.header {
+    background-color: #EEEEEE;
+    padding: 2rem;
+}
+  
+h2 {
+    color: black;
+    font-weight: 400;
+    font-size: 41px;
+    letter-spacing: 2px
+  }
+>>>>>>> CSS created, index.html is ABOUT
 
 h3 {
     color: #155FF0;
     font-weight: 400;
+<<<<<<< HEAD
     --max-font: 20;
     --min-font: 20;
     font-family: var(--main-font);
@@ -159,11 +181,33 @@ p {
     --min-font: 15;
     font-family: var(--main-font);
     font-size: var(--responsive);
+=======
+    font-size: 22px;
+  }
+
+  p { 
+    color: black;
+    font-size: 14px;
+  }
+
+.line2 {     
+/*     display: flex;
+    justify-content: flex-start;
+    align-items: flex-start; */
+    font-weight: 400;
+    display: grid;
+    grid-template-columns: 600fr 0fr 0fr 100fr;
+    justify-content: center;
+    grid-gap: 30px;
+    margin: 0 auto;
+
+>>>>>>> CSS created, index.html is ABOUT
   }
 
 a {
     text-decoration: none;
     font-weight: 400;
+<<<<<<< HEAD
     /* display: inline-block; */
     color: black;
     --max-font: 20;
@@ -671,3 +715,51 @@ ul {
 }
 
 
+=======
+    font-size: 18px;
+}
+
+  a:visited {
+    color: black;
+  }
+  a:hover {
+    color: #155FF0;
+  }
+
+.current-link {
+    color:#155FF0;
+}
+
+.PageContent {
+    background-color: white;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin: 2rem;
+    display: flex;
+
+}
+
+.AboutDescription {
+    height: 20fr;
+    width: 20fr;
+    padding-right: 60px;
+
+}
+
+/* .WorkDescription {
+    height: 20fr;
+    width: 20fr;
+    padding-right: 60px;
+
+} */
+
+.PressBox {
+    height: 20fr;
+    width: 20fr;
+}
+
+.footer {
+    background-color: #eeeeee; 
+    padding: 2rem;
+}
+>>>>>>> CSS created, index.html is ABOUT
