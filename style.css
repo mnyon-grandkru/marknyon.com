@@ -726,7 +726,15 @@ ul {
     color: #155FF0;
   }
 
-.current-link {
+a:active {
+    color:#155FF0;
+}
+
+a.link1 {
+    color:#155FF0;
+}
+
+a.link2 {
     color:#155FF0;
 }
 
@@ -759,7 +767,36 @@ ul {
 }
 
 .footer {
+    display: flex;
+    justify-content: center;
     background-color: #eeeeee; 
+<<<<<<< HEAD
     padding: 2rem;
 }
 >>>>>>> CSS created, index.html is ABOUT
+=======
+    /* padding-left: 25rem; */
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    /* padding-right: 25rem; */
+    /* gap: 10px; */
+
+}
+
+.icons {
+display: flex;
+justify-content: space-around;
+/* background-color: #eeeeee;  */
+/* padding-left: 10rem;
+padding-top: 2rem;
+padding-bottom: 2rem;
+padding-right: 10rem; */
+gap: 10px;
+
+}
+
+.icon {
+    opacity: 0.5;
+
+}
+>>>>>>> Changes made
