@@ -15,7 +15,7 @@
     padding-top: 2rem;
     padding-left: 8rem;
     padding-bottom: 2rem;
-    padding-right: 6rem;
+    /* padding-right: 6rem; */
 }
   
 h2 {
@@ -73,7 +73,6 @@ a.link2 {
     grid-template-columns: 700fr 0fr 0fr 200fr;
     justify-content: center;
     grid-gap: 30px;
-    margin: 0 auto;
 }
 
 
@@ -91,16 +90,17 @@ a.link2 {
     grid-gap: 30px;
 }
 
+
 .Contact {
-    background-color: white;
+    /* background-color: white; */
     /* padding-top: 2rem;
     padding-bottom: 2rem; */
-    padding-left: 8rem;
+    /* padding-left: 8rem;
     padding-right: 12rem;
-    margin-bottom: 2rem;
+    margin-bottom: 2rem; */
     display: flex;
     /* grid-template-columns: 700fr 200fr; */
-    justify-content: space-between;
+    justify-content: center;
     /* grid-gap: 30px; */
 }
 
@@ -121,28 +121,30 @@ a.link2 {
 .PressBox {
     height: 20fr;
     width: 20fr;
+    border: 1px solid gray;
+    border-radius: 6px;
+    padding: 10px;
 }
 
 .button {
     border: 1px;
+    max-width: 200px;
     color: white;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
-    /* font-size: 16px; */
-    margin: 4px 2px;
+    margin: 0px 2px;
     cursor: pointer;
     background-color: #0A98DD;
     border: 1px solid gray;
     border-radius: 6px;
 
-  }
+}
 
-  .button:hover {
-    background-color: #155FF0;
-    color: white;
-  }
+.button:hover {
+background-color: #155FF0;
+color: white;
+}
 
 .footer {
     display: flex;
@@ -167,6 +169,9 @@ gap: 10px;
 }
 
 .icon {
-    opacity: 0.5;
+    opacity: 0.35;
 }
 
+.icon:hover {
+    opacity: 0.5;
+}
