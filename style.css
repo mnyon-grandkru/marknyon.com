@@ -12,7 +12,10 @@
 
 .header {
     background-color: #EEEEEE;
-    padding: 2rem;
+    padding-top: 2rem;
+    padding-left: 8rem;
+    padding-bottom: 2rem;
+    padding-right: 6rem;
 }
   
 h2 {
@@ -28,22 +31,9 @@ h3 {
     font-size: 22px;
   }
 
-  p { 
+p { 
     color: black;
     font-size: 14px;
-  }
-
-.line2 {     
-/*     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start; */
-    font-weight: 400;
-    display: grid;
-    grid-template-columns: 600fr 0fr 0fr 100fr;
-    justify-content: center;
-    grid-gap: 30px;
-    margin: 0 auto;
-
   }
 
 a {
@@ -54,10 +44,11 @@ a {
 
   a:visited {
     color: black;
-  }
-  a:hover {
-    color: #155FF0;
-  }
+}
+
+a:hover {
+color: #155FF0;
+}
 
 a:active {
     color:#155FF0;
@@ -71,21 +62,54 @@ a.link2 {
     color:#155FF0;
 }
 
+
+.line2 {     
+/*     display: flex;
+    justify-content: flex-start;
+    align-items: flex-start; */
+    position: relative;
+    font-weight: 400;
+    display: grid;
+    grid-template-columns: 700fr 0fr 0fr 200fr;
+    justify-content: center;
+    grid-gap: 30px;
+    margin: 0 auto;
+}
+
+
 .PageContent {
     background-color: white;
     padding-top: 2rem;
     padding-bottom: 2rem;
-    margin: 2rem;
-    display: flex;
+    padding-left: 8rem;
+    padding-right: 6rem;
+    /* margin: 2rem; */
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: 700fr 200fr;
+    justify-content: center;
+    grid-gap: 30px;
+}
 
+.Contact {
+    background-color: white;
+    /* padding-top: 2rem;
+    padding-bottom: 2rem; */
+    padding-left: 8rem;
+    padding-right: 12rem;
+    margin-bottom: 2rem;
+    display: flex;
+    /* grid-template-columns: 700fr 200fr; */
+    justify-content: space-between;
+    /* grid-gap: 30px; */
 }
 
 .AboutDescription {
     height: 20fr;
     width: 20fr;
     padding-right: 60px;
-
 }
+
 
 /* .WorkDescription {
     height: 20fr;
@@ -99,6 +123,27 @@ a.link2 {
     width: 20fr;
 }
 
+.button {
+    border: 1px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    /* font-size: 16px; */
+    margin: 4px 2px;
+    cursor: pointer;
+    background-color: #0A98DD;
+    border: 1px solid gray;
+    border-radius: 6px;
+
+  }
+
+  .button:hover {
+    background-color: #155FF0;
+    color: white;
+  }
+
 .footer {
     display: flex;
     justify-content: center;
@@ -108,7 +153,6 @@ a.link2 {
     padding-bottom: 2rem;
     /* padding-right: 25rem; */
     /* gap: 10px; */
-
 }
 
 .icons {
@@ -120,10 +164,9 @@ padding-top: 2rem;
 padding-bottom: 2rem;
 padding-right: 10rem; */
 gap: 10px;
-
 }
 
 .icon {
     opacity: 0.5;
-
 }
+
