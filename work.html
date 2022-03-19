@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mark Nyon - Technologist, Educator</title>
     <link href="style.css" rel="stylesheet">
+    <link href="Work.css" rel="stylesheet">
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" /> -->
     <!-- <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/montserrat" type="text/css"/> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,55 +20,117 @@
     div "header" bg color gray -->
     <div class="header">
         <h2>Mark Nyon</h2>
+            <div class="line2">
+                <h3>Technologist, Educator</h3>
 
-        <div class="line2">
-            <h3>Technologist, Educator</h3>
+                <div class="link1">
+                    <a class=link1 href="work.html">WORK</a>
+                </div>
+                    
+                <div class="link2">
+                    <a href="index.html">ABOUT</a>
+                </div>
 
-            <div class="link1">
-                <a class=link1 href="work.html">WORK</a>
-            </div>
-                
-            <div class="link2">
-                <a href="index.html">ABOUT</a>
-            </div>
-
-            <div class="link3">
-                <a href="">WHAT I DO</a>
-            </div>
-        </div>    
+                <div class="link3">
+                    <a href="">WHAT I DO</a>
+                </div>
+         </div>    
     </div> 
-        <div class="PageContent">
-            <div class="WorkDescription">
-                <p>Lorem ipsum dolor sit amet consectetur adipiscing 
-                elit, nam viverra curabitur ridiculus condimentum habitasse sociosqu massa, 
-                integer tincidunt dictumst taciti eget dapibus. Nisi eros quam mi congue arcu 
-                sagittis dapibus dui, fermentum a dictum nulla tristique dignissim augue,himenaeos 
-                cursus suscipit venenatis parturient euismod eleifend. Tincidunt fames habitant 
-                fringilla dignissimeu facilisi ac, id diam metus mattis volutpat sapien suspendisse 
-                interdum, condimentum molestie tellus gravida risus purus.</p></div>
-            <div class="PressBox"></div>
-            <div class="Contact"></div>
+
+    <div class="Content">
+        <div class="Work">
+
+            <img src="websites/FarmersCOLOR.png" class="screenshot" id="ub" width="47%">
+            <img src="websites/ThinkfulCOLOR.png" class="screenshot" width="47%" alt="Thinkful">
+            <!-- This is a test of changing the image but how to add text as well
+                and make it link to the actual project/website? -->
+            <div class="Farmers"></div>            
+            <div class="Farmers"></div>
+
+
+<!-- /* Image and text overlay on hover */ -->
+
+<div class="overlay-image"><a href="">
+  <img class="image" src="websites/ThinkfulC1.png" alt="My work at Thinkful" />
+  <div class="normal">
+    <div class="text"></div>
+  </div>
+
+  <div class="hover">
+    <img class="image" src="websites/ThinkfulB.png" alt="My work at Thinkful"/>
+    <div class="text"><h4>Thinkful</h4>
+        <p>Lorem Ipsum dolor sit amet consectetur adipiscing elit
+        urna consequat felis vehicula class ultricies mollis dictumst</p></div>
+  </div>
+</a>
+</div>
+
+<div class="overlay-image"><a href="">
+    <img class="image" src="websites/FarmersC.png" alt="My work at Farmer's Web" />
+    <div class="normal">
+      <div class="text"></div>
+    </div>
+  
+    <div class="hover">
+      <img class="image" src="websites/FarmersWebB.png" alt="My work at Farmer's Web"/>
+      <div class="text"><h4>Farmer's Web</h4>
+          <p>Lorem Ipsum dolor sit amet consectetur adipiscing elit
+          urna consequat felis vehicula class ultricies mollis dictumst</p></div>
+    </div>
+  </a>
+  </div>
+  
+
+<!-- ------------PSUEDO (dumb)-------------------- -->
+
+            <div class="overlaythree">
+                <a href="#" class="pseudover v2" title="Farmer's Web:  I made this site 
+                Lorem Ipsum dolor sit amet consectetur adipiscing elit
+                urna consequat felis vehicula class ultricies mollis dictumst">
+                <div class="Farmers"></div> 
+                <!-- <img src="websites/ThinkfulCOLOR.png" class="screenshot" width="47%" alt="overlay"> -->
+                </a>
+            </div>
+
+<!-- --------------PSUEDO END------------------ -->
+
+
+
+
         </div>
+
+        <div class="Contact">
+            <ul>
+            <li><p class="Email">For press inquiries, please contact 
+                <a style="font-size: 14px" href="">anemail@anemail.com</a></p></li>
+                <li><button class="button">Contact Me ></button></li>
+            </ul>
+        </div>
+
+    </div>
 
         <div class="footer">
-            <div class="icon">
-                <a href="">twitter</a>
-            </div>
-
-        <div class="icon">
-            <a href="">github</a>
-        </div>
-            
-        <div class="icon">
-            <a href="">linkedin</a>
-        </div>
-
-        <div class="icon">
-            <a href="">blog</a>
-        </div>
-
-        <div class="icon">
-            <a href="">resume</a>
-        </div>
-    </footer> 
+            <div class="icons">
+                <div class="icon">
+                    <a href=""><img src="icons/twitter3.png" width="45" height="45"  alt="Twitter"></a>
+                </div>
+        
+                <div class="icon">
+                    <a href=""><img src="icons/guithub.png" width="45" height="45" alt="Github"></a>
+                </div>
+                    
+                <div class="icon">
+                    <a href=""><img src="icons/linkedin.png" width="45" height="45" alt="LinkedIn"></a>
+                </div>
+        
+                <div class="icon">
+                    <a href=""><img src="icons/blog.png" width="45" height="45" alt="Blog"></a>        
+                </div>
+        
+                <div class="icon">
+                    <a href=""><img src="icons/resume.png" width="45" height="45" alt="Resume"></a>
+                </div>    
+            </div>    
+        </footer> 
+    </div>
 </body>
