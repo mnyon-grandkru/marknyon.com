@@ -1,0 +1,162 @@
+.Work {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    justify-content: space-evenly;
+    background-color: white;
+    padding-top:2rem;
+    padding-left: 8rem;
+    padding-right: 6rem;
+}
+
+.screenshot {
+    border: 1px solid gray;
+    box-shadow: 5px 5px 5px lightgrey;
+}
+
+
+.Farmers {
+    display: block;
+    width: 560px;
+    height: 330px;
+    background: url(websites/FarmersCOLOR.png) no-repeat;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border: 1px solid gray;
+    box-shadow: 5px 5px 5px lightgrey;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+
+.Farmers:hover {
+    background: url(websites/FarmersWebBW.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border: 1px solid gray;
+    box-shadow: 5px 5px 5px lightgrey;
+    opacity: 0.3;
+}
+
+/* Image and text overlay on hover
+https://pavenum.com/en/blog/images-and-text-overlays-in-html-css/ /*
+
+
+/********* Simple or original overlay *******/
+
+/* Main container */
+.overlay-image {
+    position: relative;
+    /* width: 100%; */
+    border: 1px solid gray;
+    box-shadow: 5px 5px 5px lightgrey;
+  }
+  
+  /* Original image */
+  .overlay-image .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+
+  /* Original text overlay */
+.overlay-image .text {
+    color: #fff;
+    font-size: 30px;
+    line-height: .8em;
+    text-align: left;
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    transform: translate(-50%, -20%);
+
+  }
+
+  .overlay-image .hover {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .2s ease;
+  }
+  
+  /* New overlay appearance on hover */
+  .overlay-image:hover .hover {
+    opacity: 1;
+  }
+
+
+
+  .overlay-image:hover:hover .image {
+    opacity: 0.08;
+    filter: blur(2px);
+  }
+
+
+  .overlay-image .normal {
+    transition: .7s ease;
+  } 
+
+  .overlay-image:hover .normal {
+    opacity: 0;
+  }
+
+  .overlay-image .hover {
+    background-color: rgba(238,238,238,1.0);
+    position: absolute;
+    display: inline-block;
+  }
+
+
+/* -------------PSEUDO----------- */
+
+ .pseudover {
+   position: relative;
+   display: inline-block;
+ }
+
+ .pseudover:after {
+    content: attr(title);
+    color:  rgba(238,238,238,1.0);
+    /* padding: .5em 1em; */
+    font-family: 'Montserrat';
+    font-size: 14px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: all .25s ease-in-out;
+  }
+
+  .pseudover:hover:after {
+    background:  rgba(238,238,238,1.0);
+    color: #fff;
+  }
+
+  .pseudover.v2:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.pseudover.v2:hover:before {
+  content: attr(title);
+  position: absolute;
+  margin-top: -.5em;
+  top: 25%;
+  left: 10%;
+  width: 75%;
+  color: black;
+  z-index: 2;
+  text-align: left;
+  font-family: 'Montserrat';
+  font-size: 14px;
+  font-weight: 500;
+
+}
+
+

@@ -1,0 +1,281 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+  }
+
+
+.header {
+    background-color: #EEEEEE;
+    height: 140px;
+    padding-top: 2rem;
+    padding-left: 8rem;
+    padding-bottom: 2rem;
+}
+    
+.line2 {     
+    position: relative;
+    font-weight: 400;
+    display: grid;
+    grid-template-columns: 700fr 0fr 0fr 200fr;
+    justify-content: center;
+    grid-gap: 30px;
+}
+
+/*
+THIS IS CLEANER BUT BREAKS THE WORK PAGE... have to figure that out
+.Content {
+    min-height: calc(100vh - 250px);
+    margin-left: 8rem;
+    margin-right: 8rem;
+  }
+
+
+.PageContent {
+    background-color: white;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: grid;
+    grid-template-columns: 700fr 400fr;
+    align-items: start;
+    grid-gap: 30px;
+} */
+
+.Content {
+    min-height: calc(100vh - 250px);
+  }
+  
+
+.PageContent {
+    background-color: white;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 8rem;
+    padding-right: 6rem;
+    display: grid;
+    grid-template-columns: 700fr 400fr;
+    align-items: start;
+    grid-gap: 30px;
+}
+
+h2 {
+    color: black;
+    font-weight: 400;
+    font-size: 41px;
+    letter-spacing: 2px
+  }
+
+h3 {
+    color: #155FF0;
+    font-weight: 400;
+    font-size: 22px;
+  }
+
+  h4 {
+    color: black;
+    font-weight: 400;
+    font-size: 22px;
+    font-family: playfair-display, serif;
+  }
+
+  h5 {
+    color: black;
+    font-weight: 400;
+    font-size: 15px;
+    font-family: playfair-display, serif;
+  }
+
+  h6 {
+    color: black;
+    font-weight: 400;
+    font-size: 12px;
+    font-family: playfair-display, serif;
+  }
+
+p { 
+    color: black;
+    font-size: 14px;
+  }
+
+a {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 18px;
+    display: inline-block;
+
+}
+
+a:visited {
+    color: black;
+}
+
+a:hover {
+color: #155FF0;
+}
+
+a:active {
+    color:#155FF0;
+}
+
+
+a.link1 {
+    color:#155FF0;
+}
+
+/* test underline */
+
+
+/* test underline */
+
+a.link2 {
+    color:#155FF0;
+}
+
+
+.Work {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    justify-content: space-between;
+    background-color: white;
+    padding-top:2rem;
+    padding-left: 8rem;
+    padding-right: 6rem;
+}
+
+.screenshot {
+    border: 1px solid gray;
+    box-shadow: 5px 5px 5px lightgrey;
+}
+
+.AboutDescription {
+    height: 20fr;
+    width: 20fr;
+    padding-right: 60px;
+}
+
+.PressBox {
+    height: 20fr;
+    width: 20fr;
+    border: 1px solid gray;
+    box-shadow: 5px 5px 5px lightgrey;
+    border-radius: 6px;
+    padding: 20px;
+    justify-self: start;
+
+}
+
+.Contact {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 8rem;
+    padding-right: 6rem;
+}
+
+
+ul {
+    /* background-color: white; */
+    /* padding-top: 2rem;
+    padding-bottom: 2rem; */
+    /* padding-left: 8rem;
+    padding-right: 12rem;
+    margin-bottom: 2rem; */
+    display: flex;
+    /* grid-template-columns: 700fr 200fr; */
+    justify-content: space-between;
+    /* grid-gap: 30px; */
+    list-style-type: none;  
+}
+
+.Email {
+    padding-top: 10px;
+}
+
+/* .WorkDescription {
+    height: 20fr;
+    width: 20fr;
+    padding-right: 60px;
+
+} */
+
+.button {
+    border: 1px;
+    max-width: 200px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    margin: 0px 2px;
+    cursor: pointer;
+    background-color: #0A98DD;
+    border: 1px solid gray;
+    border-radius: 6px;
+
+}
+
+.button:hover {
+background-color: #155FF0;
+color: white;
+}
+
+.footer {
+    display: flex;
+    height: 110px;
+    justify-content: center;
+    background-color: #eeeeee; 
+    /* padding-left: 25rem; */
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-bottom: 0em;
+    /* padding-right: 25rem; */
+    /* gap: 10px; */
+}
+
+.icons {
+display: flex;
+justify-content: space-around;
+/* background-color: #eeeeee;  */
+/* padding-left: 10rem;
+padding-top: 2rem;
+padding-bottom: 2rem;
+padding-right: 10rem; */
+gap: 10px;
+}
+
+.icon {
+    opacity: 0.35;
+}
+
+.icon:hover {
+    opacity: 0.5;
+}
+
+
+.Farmers {
+    display: block;
+    width: 550px;
+    height: 330px;
+    background: url(websites/FarmersCOLOR.png) no-repeat;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border: 1px solid gray;
+    box-shadow: 5px 5px 5px lightgrey;
+    -webkit-transition: all .7s ease-in-out;
+    -moz-transition: all .7s ease-in-out;
+    -o-transition: all .7s ease-in-out;
+    transition: all .7s ease-in-out;
+}
+
+.hide {
+    display: none;
+  }
+
+.Farmers:hover + .hide {
+    background: url(websites/FarmersWebBW.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border: 1px solid gray;
+    box-shadow: 5px 5px 5px lightgrey;
+    opacity: 0.3;
+}
