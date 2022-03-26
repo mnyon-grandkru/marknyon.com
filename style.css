@@ -5,7 +5,6 @@
     font-family: 'Montserrat';
   }
 
-
 .header {
     background-color: #EEEEEE;
     height: 140px;
@@ -42,29 +41,20 @@ THIS IS CLEANER BUT BREAKS THE WORK PAGE... have to figure that out
     grid-gap: 30px;
 } */
 
-.Content {
-    min-height: calc(100vh - 250px);
-  }
-  
-
-.PageContent {
-    background-color: white;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    padding-left: 8rem;
-    padding-right: 6rem;
-    display: grid;
-    grid-template-columns: 700fr 400fr;
-    align-items: start;
-    grid-gap: 30px;
-}
-
-h2 {
+h1 {
     color: black;
+    font-family: 'Montserrat';
     font-weight: 400;
     font-size: 41px;
     letter-spacing: 2px
   }
+
+h2 {
+    color: rgba(255, 255, 255, 0.726);
+    font-weight: 400;
+    font-size: 18px;
+    font-style: italic;
+}
 
 h3 {
     color: #155FF0;
@@ -72,26 +62,33 @@ h3 {
     font-size: 22px;
   }
 
-  h4 {
+h4 {
     color: black;
     font-weight: 400;
     font-size: 22px;
     font-family: playfair-display, serif;
   }
 
-  h5 {
+h5 {
     color: black;
     font-weight: 400;
     font-size: 15px;
     font-family: playfair-display, serif;
   }
 
-  h6 {
+h6 {
     color: black;
     font-weight: 400;
     font-size: 12px;
-    font-family: playfair-display, serif;
+    /* font-family: playfair-display, serif; */
+    line-height: 180%;
   }
+
+h7 {
+    color: #155FF0;
+    font-weight: 400;
+    font-size: 20px;
+}
 
 p { 
     color: black;
@@ -103,7 +100,7 @@ a {
     font-weight: 400;
     font-size: 18px;
     display: inline-block;
-
+    color: black;
 }
 
 a:visited {
@@ -123,36 +120,86 @@ a.link1 {
     color:#155FF0;
 }
 
-/* test underline */
-
-
-/* test underline */
-
 a.link2 {
     color:#155FF0;
 }
 
-
-.Work {
-    display: flex;
-    flex-wrap: wrap;
-    row-gap: 10px;
-    justify-content: space-between;
-    background-color: white;
-    padding-top:2rem;
-    padding-left: 8rem;
-    padding-right: 6rem;
+a.link3 {
+    color:#155FF0;
 }
 
-.screenshot {
-    border: 1px solid gray;
-    box-shadow: 5px 5px 5px lightgrey;
+.link3 {
+    float: left;
+    overflow: hidden;
+}
+
+/* The dropdown container */
+.dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  /* Dropdown button */
+  .dropdown .dropbtn {
+    font-size: 18px;
+    color: black;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+  }
+
+  /* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #EEEEEE;
+    min-width: 116px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 9px 2px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #EEEEEE;
+    color: #155FF0;
+
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+.Content {
+    min-height: calc(100vh - 250px);
+  }
+
+.PageContent {
+    background-color: white;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 8rem;
+    padding-right: 6rem;
+    display: grid;
+    grid-template-columns: 700fr 400fr;
+    align-items: start;
+    grid-gap: 30px;
 }
 
 .AboutDescription {
     height: 20fr;
     width: 20fr;
     padding-right: 60px;
+    line-height: 130%;
 }
 
 .PressBox {
@@ -163,7 +210,10 @@ a.link2 {
     border-radius: 6px;
     padding: 20px;
     justify-self: start;
+}
 
+.datetitle {
+    display: flex;
 }
 
 .Contact {
@@ -172,7 +222,6 @@ a.link2 {
     padding-left: 8rem;
     padding-right: 6rem;
 }
-
 
 ul {
     /* background-color: white; */
@@ -192,14 +241,7 @@ ul {
     padding-top: 10px;
 }
 
-/* .WorkDescription {
-    height: 20fr;
-    width: 20fr;
-    padding-right: 60px;
-
-} */
-
-.button {
+.footerbutton {
     border: 1px;
     max-width: 200px;
     color: white;
@@ -211,12 +253,11 @@ ul {
     background-color: #0A98DD;
     border: 1px solid gray;
     border-radius: 6px;
-
 }
 
-.button:hover {
-background-color: #155FF0;
-color: white;
+.footerbutton:hover {
+    background-color: #155FF0;
+    color: white;
 }
 
 .footer {
@@ -233,14 +274,9 @@ color: white;
 }
 
 .icons {
-display: flex;
-justify-content: space-around;
-/* background-color: #eeeeee;  */
-/* padding-left: 10rem;
-padding-top: 2rem;
-padding-bottom: 2rem;
-padding-right: 10rem; */
-gap: 10px;
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
 }
 
 .icon {
@@ -248,7 +284,7 @@ gap: 10px;
 }
 
 .icon:hover {
-    opacity: 0.5;
+    opacity: 0.65;
 }
 
 
@@ -279,3 +315,4 @@ gap: 10px;
     box-shadow: 5px 5px 5px lightgrey;
     opacity: 0.3;
 }
+

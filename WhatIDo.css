@@ -1,0 +1,82 @@
+.WhatIDo {
+    background-color: white;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 8rem;
+    padding-right: 6rem;
+    display: grid;
+    grid-template-columns: 200fr 200fr;
+    align-items: start;
+    grid-gap: 80px;
+}
+
+.Description {
+    height: 20fr;
+    width: 10fr;
+    padding-right: 60px;
+    line-height: 150%;
+}
+
+/* OLD CSS BOXES */
+.darkbluebox {
+    border: 1px solid gray;
+    box-shadow: 5px 5px 5px lightgrey;
+    background-color: #0A98DD;
+    border-radius: 6px;
+    padding: 40px;
+    /* justify-self: start; */
+}
+
+.lightbluebox {
+    border: 1px solid gray;
+    box-shadow: 5px 5px 5px lightgrey;
+    background-color: #A6D0F0;
+    border-radius: 6px;
+    padding: 40px;
+    justify-self: start;
+}
+
+/*this is the css for the light blue box*/
+
+.container{
+    position: relative;
+}
+
+.box{
+    /* width: 450px;
+    height: 250px; */
+    /* opacity: 0.9; */
+    position: absolute;
+}
+
+#quoteimage {
+    opacity: 0.65;
+}
+
+.quotemarks {
+    background: transparent;
+    z-index: 9;
+}
+
+.blue {
+    top: 30px;
+    left: 15px;
+    background: #A6D0F0;;
+    z-index: 3;
+    box-shadow: 5px 5px 5px lightgrey;
+    border-radius: 6px;
+    padding: 40px;
+    justify-self: start;
+}
+
+.darkblue{
+    top: 30px;
+    left: 15px;
+    background: #0A98DD;
+    z-index: 3;
+    box-shadow: 5px 5px 5px lightgrey;
+    border-radius: 6px;
+    padding: 40px;
+    justify-self: start;
+
+}

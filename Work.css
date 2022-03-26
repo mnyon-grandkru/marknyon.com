@@ -14,7 +14,6 @@
     box-shadow: 5px 5px 5px lightgrey;
 }
 
-
 .Farmers {
     display: block;
     width: 560px;
@@ -29,7 +28,6 @@
     -o-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
 }
-
 
 .Farmers:hover {
     background: url(websites/FarmersWebBW.png);
@@ -69,10 +67,10 @@ https://pavenum.com/en/blog/images-and-text-overlays-in-html-css/ /*
     line-height: .8em;
     text-align: left;
     position: absolute;
-    top: 30%;
-    left: 40%;
+    width: 80%;
+    top: 25%;
+    left: 50%;
     transform: translate(-50%, -20%);
-
   }
 
   .overlay-image .hover {
@@ -89,13 +87,10 @@ https://pavenum.com/en/blog/images-and-text-overlays-in-html-css/ /*
     opacity: 1;
   }
 
-
-
   .overlay-image:hover:hover .image {
     opacity: 0.08;
     filter: blur(2px);
   }
-
 
   .overlay-image .normal {
     transition: .7s ease;
@@ -131,12 +126,12 @@ https://pavenum.com/en/blog/images-and-text-overlays-in-html-css/ /*
     transition: all .25s ease-in-out;
   }
 
-  .pseudover:hover:after {
+.pseudover:hover:after {
     background:  rgba(238,238,238,1.0);
     color: #fff;
   }
 
-  .pseudover.v2:after {
+.pseudover.v2:after {
   content: "";
   width: 100%;
   height: 100%;
