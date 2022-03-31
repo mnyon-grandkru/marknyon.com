@@ -17,29 +17,10 @@
     position: relative;
     font-weight: 400;
     display: grid;
-    grid-template-columns: 700fr 0fr 0fr 200fr;
+    grid-template-columns: 700fr 0fr 0fr 160fr;
     justify-content: center;
     grid-gap: 30px;
 }
-
-/*
-THIS IS CLEANER BUT BREAKS THE WORK PAGE... have to figure that out
-.Content {
-    min-height: calc(100vh - 250px);
-    margin-left: 8rem;
-    margin-right: 8rem;
-  }
-
-
-.PageContent {
-    background-color: white;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    display: grid;
-    grid-template-columns: 700fr 400fr;
-    align-items: start;
-    grid-gap: 30px;
-} */
 
 h1 {
     color: black;
@@ -54,6 +35,8 @@ h2 {
     font-weight: 400;
     font-size: 18px;
     font-style: italic;
+    padding-left: 1.5rem;
+    /* padding-bottom: 0rem; */
 }
 
 h3 {
@@ -133,19 +116,31 @@ a.link3 {
     overflow: hidden;
 }
 
+.whatido {
+    color:#155FF0;
+}
+
+
 /* The dropdown container */
 .dropdown {
     float: left;
     overflow: hidden;
   }
   
-  /* Dropdown button */
-  .dropdown .dropbtn {
+.dropdown .dropbtn {
     font-size: 18px;
     color: black;
     background-color: inherit;
-    font-family: inherit; /* Important for vertical align on mobile phones */
-    margin: 0; /* Important for vertical align on mobile phones */
+    font-family: inherit;
+    margin: 0;
+  }
+
+.dropdown .dropbtn2 {
+    font-size: 18px;
+    color: blue;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
   }
 
   /* Dropdown content (hidden by default) */
@@ -175,20 +170,52 @@ a.link3 {
   }
   
   /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-content {
     display: block;
   }
 
+
+
+/* THIS WAS CLEANER AND EVERYTHING WAS BUT 
+LINED UP PROPERLY BUT IT BREAKS THE WORK PAGE... have to figure that out */
+/* .Content {
+    min-height: calc(100vh - 250px);
+    margin-left: 8rem;
+    margin-right: 8rem;
+  }
+
+
+.PageContent {
+    background-color: white;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: grid;
+    grid-template-columns: 700fr 400fr;
+    align-items: start;
+    grid-gap: 30px;
+} */
+
+.whatidotitle {
+    padding-top: 1em;
+    text-align: left;
+    font-size: x-large;
+    /* position: sticky;
+    top: 0; */
+}
+
 .Content {
     min-height: calc(100vh - 250px);
+    padding-left: 8rem;
+    padding-right: 6rem;
+    position: relative;
   }
 
 .PageContent {
     background-color: white;
     padding-top: 2rem;
     padding-bottom: 2rem;
-    padding-left: 8rem;
-    padding-right: 6rem;
+    /* padding-left: 8rem;
+    padding-right: 6rem; */
     display: grid;
     grid-template-columns: 700fr 400fr;
     align-items: start;
@@ -196,10 +223,10 @@ a.link3 {
 }
 
 .AboutDescription {
-    height: 20fr;
-    width: 20fr;
-    padding-right: 60px;
-    line-height: 130%;
+    /* height: 20fr; */
+    width: 85%;
+    /* padding-right: 60px; */
+    line-height: 155%;
 }
 
 .PressBox {

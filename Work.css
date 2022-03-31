@@ -2,111 +2,107 @@
     display: flex;
     flex-wrap: wrap;
     row-gap: 10px;
-    justify-content: space-evenly;
-    background-color: white;
-    padding-top:2rem;
-    padding-left: 8rem;
-    padding-right: 6rem;
+    justify-content: space-around;
+    /* justify-items: stretch; */
+    /* column-gap: 25px; */
+    /* background-color: #EEEEEE; */
+    padding-top: 2rem;
+    /* border: 1px solid lightgray;
+    border-radius: 6px; */
+    /* padding: 2rem;
+    margin-top: 1rem; */
 }
 
-.screenshot {
+
+/* WORK 3/30 - added gray background. Can be removed
+and FLEX changed to SPPACE-EVENLY but then, too
+much space between.  Probably better to make
+images larger */
+
+/* .screenshot {
     border: 1px solid gray;
     box-shadow: 5px 5px 5px lightgrey;
-}
-
-.Farmers {
-    display: block;
-    width: 560px;
-    height: 330px;
-    background: url(websites/FarmersCOLOR.png) no-repeat;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    border: 1px solid gray;
-    box-shadow: 5px 5px 5px lightgrey;
-    -webkit-transition: all .3s ease-in-out;
-    -moz-transition: all .3s ease-in-out;
-    -o-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
-}
-
-.Farmers:hover {
-    background: url(websites/FarmersWebBW.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    border: 1px solid gray;
-    box-shadow: 5px 5px 5px lightgrey;
-    opacity: 0.3;
-}
-
-/* Image and text overlay on hover
-https://pavenum.com/en/blog/images-and-text-overlays-in-html-css/ /*
-
-
-/********* Simple or original overlay *******/
+    border-radius: 6px;
+} */
 
 /* Main container */
 .overlay-image {
     position: relative;
     /* width: 100%; */
     border: 1px solid gray;
+    border-radius: 6px;
     box-shadow: 5px 5px 5px lightgrey;
   }
   
   /* Original image */
-  .overlay-image .image {
+.overlay-image .image {
     display: block;
     width: 100%;
     height: auto;
+    border-radius: 6px;
+
   }
-  
+
+.overlay-image .heading {
+  line-height: 2em;
+}
 
   /* Original text overlay */
 .overlay-image .text {
-    color: #fff;
-    font-size: 30px;
-    line-height: .8em;
-    text-align: left;
-    position: absolute;
-    width: 80%;
-    top: 25%;
-    left: 50%;
-    transform: translate(-50%, -20%);
+  color: #fff;
+  font-size: 30px;
+  line-height: 1em;
+  text-align: left;
+  position: absolute;
+  width: 80%;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+  border-radius: 6px;
+
   }
 
-  .overlay-image .hover {
-    position: absolute;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .2s ease;
+.overlay-image .hover {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 1.0s ease;
+  border-radius: 6px;
+
   }
   
   /* New overlay appearance on hover */
-  .overlay-image:hover .hover {
+.overlay-image:hover .hover {
     opacity: 1;
+    border-radius: 6px;
+
   }
 
-  .overlay-image:hover:hover .image {
-    opacity: 0.08;
+.overlay-image:hover:hover .image {
+    opacity: 0.13;
     filter: blur(2px);
+    border-radius: 6px;
+
   }
 
-  .overlay-image .normal {
+.overlay-image .normal {
     transition: .7s ease;
   } 
 
-  .overlay-image:hover .normal {
+.overlay-image:hover .normal {
     opacity: 0;
   }
 
-  .overlay-image .hover {
-    background-color: rgba(238,238,238,1.0);
+.overlay-image .hover {
+    /* background-color: rgba(238,238,238,1.0); */
+    background-color: white;
     position: absolute;
     display: inline-block;
   }
 
-
+  
 /* -------------PSEUDO----------- */
 
  .pseudover {

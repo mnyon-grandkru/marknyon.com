@@ -75,7 +75,9 @@ a.link2 {
     grid-gap: 30px;
 }
 
-
+.Content {
+    min-height: calc(100vh - 250px);
+  }
 .PageContent {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
