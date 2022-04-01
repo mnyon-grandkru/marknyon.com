@@ -7,20 +7,32 @@
 
 .header {
     background-color: #EEEEEE;
-    height: 140px;
-    padding-top: 2rem;
-    padding-left: 8rem;
+    height: 160px;
+    padding-top: 3rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
     padding-bottom: 2rem;
 }
-    
+
+    /* Header Issue - Trying to align
+    Mark title left and evenly space
+    links aligned right but aligned
+    perfectly with all content.  Tried
+    Flex - do not know how. Difficulty
+    making GRID items line up correctly */
+
 .line2 {     
     position: relative;
     font-weight: 400;
     display: grid;
-    grid-template-columns: 700fr 0fr 0fr 160fr;
+    grid-template-columns: 700fr 0fr 0fr 100fr;
     justify-content: center;
     grid-gap: 30px;
+    /* display: flex;  
+    justify-content: space-between;
+    align-items: flex-end; */
 }
+
 
 h1 {
     color: black;
@@ -205,7 +217,7 @@ LINED UP PROPERLY BUT IT BREAKS THE WORK PAGE... have to figure that out */
 
 .Content {
     min-height: calc(100vh - 250px);
-    padding-left: 8rem;
+    padding-left: 6rem;
     padding-right: 6rem;
     position: relative;
   }
@@ -246,7 +258,7 @@ LINED UP PROPERLY BUT IT BREAKS THE WORK PAGE... have to figure that out */
 .Contact {
     padding-top: 2rem;
     padding-bottom: 2rem;
-    padding-left: 8rem;
+    padding-left: 6rem;
     padding-right: 6rem;
 }
 
