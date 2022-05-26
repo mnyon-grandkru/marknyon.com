@@ -132,6 +132,11 @@ a.link2 {
 
 }
 
+.dropdown {
+    text-align: right;
+
+}
+
 .Contact {
     padding-top: 2rem;
     padding-bottom: 2rem;

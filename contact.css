@@ -9,30 +9,30 @@
     }
 
   .contact {
-  color: black;
-  font-family: 'Montserrat';
-  font-weight: 400;
-  font-size: 26px;
-  letter-spacing: 2px
+    color: black;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 26px;
+    letter-spacing: 2px
 }
-    form {
+  form {
     padding: 25px;
     margin: 25px;
     box-shadow: 0 2px 5px #f5f5f5; 
     background: #f5f5f5; 
     border-radius: 6px;
-    }
-    .fas {
+  }
+  .fas {
     margin: 25px 10px 0;
     font-size: 72px;
     color: #fff;
-    }
-    .fa-envelope {
+  }
+  .fa-envelope {
     transform: rotate(-20deg);
-    }
+  }
     .fa-at , .fa-mail-bulk{
     transform: rotate(10deg);
-    }
+  }
     input, textarea {
     width: calc(100% - 18px);
     padding: 8px;
@@ -40,11 +40,11 @@
     border: 1px solid #1c87c9;
     outline: none;
     border-radius: 6px;
-    }
-    input::placeholder {
+  }
+  input::placeholder {
     color: #666;
-    }
-    button {
+  }
+  button {
     width: 100%;
     padding: 10px;
     border: none;
@@ -54,27 +54,28 @@
     color: #fff;
     border-radius: 6px;
 
-    }
-    button:hover {
-    /* background: #2371a0; */
+  }
+  button:hover {
+  /* background: #2371a0; */
     background: #155FF0;;
-    }    
-    @media (min-width: 568px) {
-    .main-block {
+  }    
+  @media (min-width: 568px) {
+  .main-block {
     flex-direction: row;
-    }
-    .left-part, form {
+  }
+  .left-part, form {
     width: 50%;
-    }
-    .fa-envelope {
+  }
+  .fa-envelope {
     margin-top: 0;
     margin-left: 20%;
-    }
-    .fa-at {
+  }
+  .fa-at {
     margin-top: -10%;
     margin-left: 65%;
-    }
-    .fa-mail-bulk {
-    margin-top: 2%;
-    margin-left: 28%;
-    }
+  }
+  .fa-mail-bulk {
+  margin-top: 2%;
+  margin-left: 28%;
+  
+  ]
