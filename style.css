@@ -32,7 +32,6 @@
     justify-content: space-between;
     align-items: flex-end; */
 }
-
 h1 {
     color: black;
     font-family: 'Montserrat';
@@ -60,7 +59,7 @@ h3 {
 h4 {
     color: black;
     font-weight: 400;
-    font-size: 22px;
+    font-size: 20px;
     font-family: playfair-display, serif;
   }
 
@@ -69,14 +68,16 @@ h5 {
     font-weight: 400;
     font-size: 15px;
     font-family: playfair-display, serif;
+    padding-bottom: 8px;
   }
 
 h6 {
     color: black;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 13px;
     /* font-family: playfair-display, serif; */
-    line-height: 180%;
+    line-height: 150%;
+    padding-bottom: 6px;
   }
 
 h7 {
@@ -100,7 +101,7 @@ p {
 a {
     text-decoration: none;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 22px;
     display: inline-block;
     color: black;
 }
@@ -147,7 +148,7 @@ a.link3 {
   }
   
 .dropdown .dropbtn {
-    font-size: 18px;
+    font-size: 22px;
     color: black;
     background-color: inherit;
     font-family: inherit;
@@ -270,7 +271,9 @@ LINED UP PROPERLY BUT IT BREAKS THE WORK PAGE... have to figure that out */
     border: 1px solid gray;
     box-shadow: 5px 5px 5px lightgrey;
     border-radius: 6px;
-    padding: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
     justify-self: start;
 }
 
