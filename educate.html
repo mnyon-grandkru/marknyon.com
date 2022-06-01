@@ -13,35 +13,33 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap" 
-    rel="stylesheet">
-    
+    rel="stylesheet">   
 </head>
 
 <body>
+    <div class="header">
+        <h1>Mark Nyon</h1>
+            <div class="line2">
+                <h3>Technologist, Educator</h3>
 
-<div class="header">
-    <h1>Mark Nyon</h1>
-        <div class="line2">
-            <h3>Technologist, Educator</h3>
-
-                <div class="link1">
-                    <a href="work.html">WORK</a>
-                </div>
-                    
-                <div class="link2">
-                    <a href="index.html">ABOUT</a>
-                </div>
-
-                <div class="dropdown">
-                    <div class="dropbtn2">WHAT I DO
+                    <div class="link1">
+                        <a href="work.html">Work</a>
                     </div>
-                    <div class="dropdown-content">
-                        <a href="educate.html">Educate</a>
-                        <a href="build.html">Build</a>
+                        
+                    <div class="link2">
+                        <a href="index.html">About</a>
                     </div>
-                </div>
-        </div>    
-</div> 
+
+                    <div class="dropdown">
+                        <div class="dropbtn2">What I Do
+                        </div>
+                        <div class="dropdown-content">
+                            <a href="educate.html">Educate</a>
+                            <a href="build.html">Build</a>
+                        </div>
+                    </div>
+            </div>    
+    </div> 
 
 <div class="Content">
     <div class="whatidotitle">EDUCATE</div>
@@ -170,23 +168,39 @@
     </div>
 </div>
 
-    <div class="Contact">
-        <ul>
-        <li><p class="Email">For press inquiries, please contact 
-            <!-- <a style="font-size: 14px" href="mailto:info@grandkru.com">info@grandkru.com </a> -->
-        </p></li>
-            <li><button onclick= "location = 'contact.html'" class="footerbutton">Contact Me ></button></li>
-        </ul>
-    </div>
+<div class="Contact">
+    <ul>
+    <li><p class="Email">For press inquiries, please contact 
+        <a style="font-size: 14px" href="mailto:info@grandkru.com ">info@grandkru.com</a></p></li>
+        <li><button onclick= "location = 'contact.html'" class="footerbutton" id="contact-mark-nyon">Contact Me ></button></li>
+    </ul>
+</div>
 </div>
 
 
-        <div class="footer">
-            <div class="icons">
+<div class="footer">
+    <ul>
+        <li><a style="font-size: 14px" href="privacy_policy.html">Privacy Policy</a><br>
+            <a style="font-size: 14px" href="privacy-policy.html">Terms and Conditions</a>
+
+
+            <!-- Don't know how to do a pop up.  Found this code, doesn't work.  Opens in new tab-->
+            <br>
+            <a style="font-size: 14px" href="privacy_policy.html" target="popup" 
+            onclick="window.open('privacy_policy.html','popup','width=600,height=600,scrollbars=yes,resizable=no'); return false;">
+            Privacy supposed to pop up
+            </a>
+            <!-- Don't know how to do a pop up.  Found this code, doesn't work.  Opens in new tab-->
+
+
+        </li>
+
+        <li>
+            <div class="icons" id="links-to-mark-nyon-social-media">
                 <div class="icon">
                     <a href=""><img src="icons/twitter3.png" width="45" height="45"  alt="Twitter"></a>
                 </div>
-        
+
                 <div class="icon">
                     <a href="https://github.com/trystant" target="new"><img src="icons/guithub.png" width="45" height="45" alt="Github"></a>
                 </div>
@@ -194,15 +208,16 @@
                 <div class="icon">
                     <a href="https://www.linkedin.com/in/marknyon/" target="new"><img src="icons/linkedin.png" width="45" height="45" alt="LinkedIn"></a>
                 </div>
-        
+
                 <div class="icon">
                     <a href="https://blog.grandkru.com/" target="new"><img src="icons/blog.png" width="45" height="45" alt="Blog"></a>        
                 </div>
-        
+
                 <div class="icon">
                     <a href="http://grandkru.com/MarkSamuelNyon.pdf" target="new"><img src="icons/resume.png" width="45" height="45" alt="Resume"></a>
-                </div>     
-        </footer> 
-        </div>
-    </div>
+                </div>  
+        </li>
+    </ul>   
+</footer> 
+</div>
 </body>

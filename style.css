@@ -14,13 +14,6 @@
     padding-bottom: 2rem;
 }
 
-    /* Header Issue - Trying to align
-    Mark title left and evenly space
-    links aligned right but aligned
-    perfectly with all content.  Tried
-    Flex - do not know how. Difficulty
-    making GRID items line up correctly */
-
 .line2 {     
     position: relative;
     font-weight: 400;
@@ -32,6 +25,7 @@
     justify-content: space-between;
     align-items: flex-end; */
 }
+
 h1 {
     color: black;
     font-family: 'Montserrat';
@@ -47,7 +41,6 @@ h2 {
     font-size: 18px;
     font-style: italic;
     padding-left: 1.5rem;
-    /* padding-bottom: 0rem; */
 }
 
 h3 {
@@ -156,7 +149,7 @@ a.link3 {
   }
 
 .dropdown .dropbtn2 {
-    font-size: 18px;
+    font-size: 22px;
     color: blue;
     background-color: inherit;
     font-family: inherit;
@@ -219,8 +212,6 @@ LINED UP PROPERLY BUT IT BREAKS THE WORK PAGE... have to figure that out */
     padding-top: 1em;
     text-align: left;
     font-size: x-large;
-    /* position: sticky;
-    top: 0; */
 }
 
 .Content {
@@ -228,7 +219,7 @@ LINED UP PROPERLY BUT IT BREAKS THE WORK PAGE... have to figure that out */
     padding-left: 6rem;
     padding-right: 6rem;
     position: relative;
-  }
+}
 
 .PageContent {
     background-color: white;
@@ -247,22 +238,6 @@ LINED UP PROPERLY BUT IT BREAKS THE WORK PAGE... have to figure that out */
     width: 85%;
     /* padding-right: 60px; */
     line-height: 155%;
-}
-
-.dots {
-    opacity: 40%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 35px;
-}
-
-.AboutBulletPoints {
-    /* border: 1px solid gray; */
-    /* box-shadow: 5px 5px 5px lightgrey; */
-    /* border-radius: 6px; */
-    padding-top: 50px;
-    /* width: 85%; */
 }
 
 .PressBox {
@@ -295,7 +270,7 @@ ul {
     /* padding-left: 8rem;
     padding-right: 12rem;
     margin-bottom: 2rem; */
-    display: flex;
+    display: flex;  
     /* grid-template-columns: 700fr 200fr; */
     justify-content: space-between;
     /* grid-gap: 30px; */
@@ -326,13 +301,14 @@ ul {
 }
 
 .footer {
-    display: flex;
+    /* display: flex; */
+    /* justify-content: space-around; */
     height: 110px;
-    justify-content: center;
     background-color: #eeeeee; 
-    /* padding-left: 25rem; */
+    padding-left: 6rem;
     padding-top: 2rem;
     padding-bottom: 2rem;
+    padding-right: 6rem;
     margin-bottom: 0em;
     /* padding-right: 25rem; */
     /* gap: 10px; */
