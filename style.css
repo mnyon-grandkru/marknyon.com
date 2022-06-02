@@ -161,7 +161,7 @@ a.link3 {
     display: none;
     position: absolute;
     background-color: #EEEEEE;
-    min-width: 116px;
+    min-width: 125px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
   }
