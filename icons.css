@@ -1,0 +1,18 @@
+.icon {
+	width: 10em;
+	height: 10em;
+	position: relative;
+	display: inline-block;
+}
+
+.icon .icon-front {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+
+.icon:hover .icon-front {
+	display: inline-block;
+}

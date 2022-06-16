@@ -3,32 +3,31 @@
     flex-wrap: wrap;
     row-gap: 10px;
     justify-content: space-around;
-    /* justify-items: stretch; */
-    /* column-gap: 25px; */
-    /* background-color: #EEEEEE; */
     padding-top: 2rem;
-    /* border: 1px solid lightgray;
-    border-radius: 6px; */
-    /* padding: 2rem;
-    margin-top: 1rem; */
 }
 
-/* .screenshot {
-    border: 1px solid gray;
-    box-shadow: 5px 5px 5px lightgrey;
-    border-radius: 6px;
-} */
+.build-image {
+  position: relative;
+  border: 1px solid gray;
+  border-radius: 6px;
+  box-shadow: 5px 5px 5px lightgrey;
+}
 
-/* Main container */
+.build-image .image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+
+}
+
 .overlay-image {
     position: relative;
-    /* width: 100%; */
     border: 1px solid gray;
     border-radius: 6px;
     box-shadow: 5px 5px 5px lightgrey;
   }
   
-  /* Original image */
 .overlay-image .image {
     display: block;
     width: 100%;
@@ -41,7 +40,6 @@
   line-height: 2em;
 }
 
-  /* Original text overlay */
 .overlay-image .text {
   color: #fff;
   font-size: 30px;
@@ -67,7 +65,6 @@
 
   }
   
-  /* New overlay appearance on hover */
 .overlay-image:hover .hover {
     opacity: 1;
     border-radius: 6px;
@@ -90,7 +87,6 @@
   }
 
 .overlay-image .hover {
-    /* background-color: rgba(238,238,238,1.0); */
     background-color: white;
     position: absolute;
     display: inline-block;
