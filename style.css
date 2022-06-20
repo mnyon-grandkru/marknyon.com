@@ -322,18 +322,7 @@ ul {
     gap: 10px;
 }
 
-.twitterlink {
-    background-image: url(icons/twitter3.png); 
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 45px;
-    height: 45px;
-    opacity: 0.35;
-}
-.twitterlink:hover{
-    background-image: url(icons/twitter3_blue.png);
-    opacity: 1.0;
-}
+
 
 .icon {
     opacity: 0.35;
@@ -363,6 +352,7 @@ ul {
     display: none;
   }
 
+
 .Farmers:hover + .hide {
     background: url(websites/FarmersWebBW.png);
     background-size: 100%;
@@ -370,15 +360,4 @@ ul {
     border: 1px solid gray;
     box-shadow: 5px 5px 5px lightgrey;
     opacity: 0.3;
-}
-
-.twitterlink {
-    background-image: url(icons/twitter3.png); 
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 45px;
-    height: 45px;
-}
-.twitterlink:hover{
-    background-image: url(icons/twitter3_blue.png);
 }

@@ -8,7 +8,7 @@
 }
 .twitterlink:hover{
     background-image: url(icons/twitter3_blue.png);
-    opacity: 1.0;
+    opacity: 0.75;
 }
 
 .githublink {
@@ -21,7 +21,7 @@
 }
 .githublink:hover{
     background-image: url(icons/guithub_blue.png);
-    opacity: 1.0;
+    opacity: 0.75;
 }
 
 .linkedinlink {
@@ -34,7 +34,7 @@
 }
 .linkedinlink:hover{
     background-image: url(icons/linkedin_blue.png);
-    opacity: 1.0;
+    opacity: 0.75;
 }
 
 .bloglink {
@@ -47,7 +47,7 @@
 }
 .bloglink:hover{
     background-image: url(icons/blog_blue.png);
-    opacity: 1.0;
+    opacity: 0.75;
 }
 
 .resumelink {
@@ -60,5 +60,5 @@
 }
 .resumelink:hover{
     background-image: url(icons/resume_blue.png);
-    opacity: 1.0;
+    opacity: 0.75;
 }
