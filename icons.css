@@ -1,18 +1,64 @@
-.icon {
-	width: 10em;
-	height: 10em;
-	position: relative;
-	display: inline-block;
+.twitterlink {
+    background-image: url(icons/twitter3.png); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 45px;
+    height: 45px;
+    opacity: 0.35;
+}
+.twitterlink:hover{
+    background-image: url(icons/twitter3_blue.png);
+    opacity: 1.0;
 }
 
-.icon .icon-front {
-	display: none;
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: 1;
+.githublink {
+    background-image: url(icons/guithub.png); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 45px;
+    height: 45px;
+    opacity: 0.35;
+}
+.githublink:hover{
+    background-image: url(icons/guithub_blue.png);
+    opacity: 1.0;
 }
 
-.icon:hover .icon-front {
-	display: inline-block;
+.linkedinlink {
+    background-image: url(icons/linkedin.png); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 45px;
+    height: 45px;
+    opacity: 0.35;
+}
+.linkedinlink:hover{
+    background-image: url(icons/linkedin_blue.png);
+    opacity: 1.0;
+}
+
+.bloglink {
+    background-image: url(icons/blog.png); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 45px;
+    height: 45px;
+    opacity: 0.35;
+}
+.bloglink:hover{
+    background-image: url(icons/blog_blue.png);
+    opacity: 1.0;
+}
+
+.resumelink {
+    background-image: url(icons/resume.png); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 45px;
+    height: 45px;
+    opacity: 0.35;
+}
+.resumelink:hover{
+    background-image: url(icons/resume_blue.png);
+    opacity: 1.0;
 }

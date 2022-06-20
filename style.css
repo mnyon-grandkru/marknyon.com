@@ -322,6 +322,19 @@ ul {
     gap: 10px;
 }
 
+.twitterlink {
+    background-image: url(icons/twitter3.png); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 45px;
+    height: 45px;
+    opacity: 0.35;
+}
+.twitterlink:hover{
+    background-image: url(icons/twitter3_blue.png);
+    opacity: 1.0;
+}
+
 .icon {
     opacity: 0.35;
 }
@@ -359,3 +372,13 @@ ul {
     opacity: 0.3;
 }
 
+.twitterlink {
+    background-image: url(icons/twitter3.png); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 45px;
+    height: 45px;
+}
+.twitterlink:hover{
+    background-image: url(icons/twitter3_blue.png);
+}
