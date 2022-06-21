@@ -8,6 +8,7 @@
     <title>Contact Mark Nyon</title>
     <link href="style.css" rel="stylesheet">
     <link href="contact.css" rel="stylesheet">
+    <link href="icons.css" rel="stylesheet">
    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
   </head>
   <body>
@@ -52,35 +53,32 @@
           </form>
       </div>
 
-        <div class="footer">
-            <ul>
-                <li><a style="font-size: 14px" href="privacy_policy.html">Privacy Policy</a><br>
-                    <a style="font-size: 14px" href="privacy-policy.html">Terms and Conditions</a>
-               </li>
+      <div class="footer">
+        <ul>
+            <li>
+                <a style="font-size: 14px" href="privacy_policy.html" target="popup" 
+                onclick="window.open('privacy_policy.html','popup','width=735,height=600,scrollbars=yes,menubar=no,toolbar=no,location=no,status=no,top=100,left=400'); return false;">
+                Privacy Policy</a>
+                <br>
+                <a style="font-size: 14px" href="terms-and-conditions.html" target="popup" 
+                onclick="window.open('terms-and-conditions.html','popup','width=735,height=600,scrollbars=yes,menubar=no,toolbar=no,location=no,status=no,top=100,left=400'); return false;">
+                Terms and Conditions</a>                
+            </li>
+    
+            <li>
+                <div class="icons" id="links-to-mark-nyon-social-media">
 
-                <li>
-                    <div class="icons" id="links-to-mark-nyon-social-media">
-                        <div class="icon">
-                            <a href=""><img src="icons/twitter3.png" width="45" height="45"  alt="Twitter"></a>
-                        </div>
-        
-                        <div class="icon">
-                            <a href="https://github.com/trystant" target="new"><img src="icons/guithub.png" width="45" height="45" alt="Github"></a>
-                        </div>
-                            
-                        <div class="icon">
-                            <a href="https://www.linkedin.com/in/marknyon/" target="new"><img src="icons/linkedin.png" width="45" height="45" alt="LinkedIn"></a>
-                        </div>
-        
-                        <div class="icon">
-                            <a href="https://blog.grandkru.com/" target="new"><img src="icons/blog.png" width="45" height="45" alt="Blog"></a>        
-                        </div>
-        
-                        <div class="icon">
-                            <a href="http://grandkru.com/MarkSamuelNyon.pdf" target="new"><img src="icons/resume.png" width="45" height="45" alt="Resume"></a>
-                        </div>  
-                </li>
-            </ul>   
-        </footer> 
+                    <a href="https://www.google.com" target="new" class="twitterlink"></a>
+    
+                    <a href="https://github.com/trystant" target="new" class="githublink"></a>
+    
+                    <a href="https://www.linkedin.com/in/marknyon/" target="new" class="linkedinlink"></a>
+    
+                    <a href="https://blog.grandkru.com/" target="new" class="bloglink"></a>        
+    
+                    <a href="http://grandkru.com/MarkSamuelNyon.pdf" target="new" class="resumelink"></a>
+            </li>
+        </ul>   
+    </footer> 
     </div>
 </body>
