@@ -53,14 +53,16 @@ h4 {
     color: black;
     font-weight: 400;
     font-size: 20px;
-    font-family: playfair-display, serif;
+    /* ORIGINAL font-family: playfair-display, serif; */
+    font-family: 'Source Sans Pro', sans-serif;
   }
 
 h5 {
     color: black;
     font-weight: 400;
     font-size: 15px;
-    font-family: playfair-display, serif;
+    /* ORIGINAL font-family: playfair-display, serif; */
+    font-family: 'Source Sans Pro', sans-serif;
     padding-bottom: 8px;
   }
 
@@ -88,7 +90,7 @@ h7 {
 
 p { 
     color: black;
-    font-size: 14px;
+    font-size: 16px;
   }
 
 a {
@@ -168,7 +170,7 @@ a.link3 {
   }
   
   /* Links inside the dropdown */
-  .dropdown-content a {
+.dropdown-content a {
     float: none;
     color: black;
     padding: 9px 2px;
@@ -177,7 +179,7 @@ a.link3 {
     text-align: left;
   }
 
-  .dropdown-content a:hover {
+.dropdown-content a:hover {
     background-color: #EEEEEE;
     color: #155FF0;
 
@@ -281,6 +283,7 @@ ul {
 
 .Email {
     padding-top: 10px;
+    font-size: 15px;
 }
 
 .footerbutton {
