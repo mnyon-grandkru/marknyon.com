@@ -49,20 +49,21 @@ h3 {
     font-size: 22px;
   }
 
-h4 {
-    color: black;
-    font-weight: 400;
-    font-size: 20px;
+h4 {    
+    color: rgb(57, 55, 55);
+    font-weight: 100;
+    font-size: 24px;
     /* ORIGINAL font-family: playfair-display, serif; */
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Fira Sans', sans-serif;
   }
 
 h5 {
-    color: black;
-    font-weight: 400;
+    color: rgb(32, 31, 31);
+    font-weight: lighter;
     font-size: 15px;
     /* ORIGINAL font-family: playfair-display, serif; */
-    font-family: 'Source Sans Pro', sans-serif;
+    /* font-family: 'Source Sans Pro', sans-serif; */
+    font-family: 'Fira Sans', sans-serif; 
     padding-bottom: 8px;
   }
 
@@ -79,6 +80,7 @@ h7 {
     color: #155FF0;
     font-weight: 400;
     font-size: 20px;
+    
 }
 
 .Contact {
@@ -89,6 +91,7 @@ h7 {
 }
 
 p { 
+    font-weight: 500;
     color: black;
     font-size: 16px;
   }
@@ -283,7 +286,8 @@ ul {
 
 .Email {
     padding-top: 10px;
-    font-size: 15px;
+    font-size: 14px;
+    font-weight: normal;
 }
 
 .footerbutton {
