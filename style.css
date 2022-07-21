@@ -53,6 +53,10 @@
 }
 
 @media only screen and (max-width: 768px) {
+    .header {
+        margin: 0;
+        padding: 0;
+    }
     .nav-menu {
         position: fixed;
         left: -100%;
@@ -65,7 +69,9 @@
         transition: 0.3s;
         box-shadow:
             0 10px 27px rgba(0, 0, 0, 0.05);
+        
     }
+    
 
     .nav-menu.active {
         left: 0;
@@ -105,6 +111,7 @@
     padding-right: 6rem;
     /* padding-bottom: 3rem; */
 }
+
 
 .line2 {     
     position: relative;
@@ -322,6 +329,7 @@ a.link3 {
 .dropdown-content a:hover {
     background-color: #EEEEEE;
     color: #155FF0;
+    position: relative;
 
   }
   
