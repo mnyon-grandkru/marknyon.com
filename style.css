@@ -56,9 +56,8 @@
     .header {
         margin: 0;
         padding: 0;
-    }
-    header.site-header {
-        padding: 0;
+        height: 100px;
+
     }
     .nav-menu {
         position: fixed;
