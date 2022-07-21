@@ -57,6 +57,9 @@
         margin: 0;
         padding: 0;
     }
+    header.site-header {
+        padding: 0;
+    }
     .nav-menu {
         position: fixed;
         left: -100%;
