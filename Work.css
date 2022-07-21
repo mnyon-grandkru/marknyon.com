@@ -42,8 +42,8 @@
 
 .overlay-image .text {
   color: #fff;
-  font-size: 30px;
-  line-height: 1em;
+  /* font-size: 30px; */
+  /* line-height: 1.3em; */
   text-align: left;
   position: absolute;
   width: 80%;
