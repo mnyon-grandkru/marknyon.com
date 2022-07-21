@@ -39,6 +39,12 @@
     font-size: var(--responsive);
 }
 
+.image {
+    width: 100%;
+    min-width: 300px;
+    height: auto;
+}
+
 .container{
     position: relative;
 }

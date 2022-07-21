@@ -9,9 +9,9 @@
   }
 
 
-/* This is the top */
+/* This is the beginning of hamburger code */
 
-  .navbar {
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -95,7 +95,7 @@
 
 
 
-/* This is the bottom */
+/* This is the end of hamburger code */
 
 .header {
     background-color: #EEEEEE;
@@ -325,7 +325,6 @@ a.link3 {
 
   }
   
-  /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
     display: block;
   }
@@ -434,6 +433,7 @@ ul {
 .footerbutton {
     border: 1px;
     max-width: 200px;
+    min-width: 100px;
     color: white;
     padding: 15px 32px;
     text-align: center;
@@ -443,6 +443,10 @@ ul {
     background-color: #0A98DD;
     border: 1px solid gray;
     border-radius: 6px;
+    --max-font: 12;
+    --min-font: 10;
+    font-family: var(--main-font);
+    font-size: var(--responsive);
 }
 
 .footerbutton:hover {
