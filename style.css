@@ -113,6 +113,7 @@
 .header {
     background-color: #EEEEEE;
     height: 135px;
+    width: 100%;
     padding-top: 1.6rem;
     padding-left: 6rem;
     padding-right: 6rem;
