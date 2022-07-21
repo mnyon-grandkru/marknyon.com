@@ -8,7 +8,7 @@
 }
 .twitterlink:hover{
     background-image: url(icons/twitter3_blue.png);
-    opacity: 1.0;
+    opacity: 0.75;
 }
 
 .githublink {
