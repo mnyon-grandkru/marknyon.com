@@ -27,6 +27,7 @@
 .nav-menu {
     display: flex;
     
+    
 }
 
 .nav-item {
@@ -47,11 +48,11 @@
     /* padding: 45px 45px; */
   }
 
-  /* .accordion .container {
+  .accordion .container {
     position: relative;
-    margin: 10px 10px;
+    /* margin: 10px 10px; */
   }
-   */
+  
   /* Positions the labels relative to the .container. Adds padding to the top and bottom and increases font size. Also makes its cursor a pointer */
   
   .accordion .label {
@@ -170,12 +171,5 @@
     .hamburger.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
-    /* .hamburger.active .bar:nth-child(4) {
-        transform: translateY(-8px) rotate(-45deg);
-
-    }
-    .hamburger.active .bar:nth-child(5) {
-        transform: translateY(-8px) rotate(-45deg);
-    } */
     
 }
