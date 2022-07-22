@@ -283,7 +283,21 @@ LINED UP PROPERLY BUT IT BREAKS THE WORK PAGE... have to figure that out */
 
 }
 
+@media only screen and (max-width: 768px) {
+    .Content {
+        /* min-height: calc(100vh - 250px); */
+        width: 100%;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        position: relative;
+        z-index: -1;
+    }
+}
+
+
 .PageContent {
+    min-height: calc(100vh - 250px);
+
     background-color: white;
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -297,11 +311,34 @@ LINED UP PROPERLY BUT IT BREAKS THE WORK PAGE... have to figure that out */
     z-index: -2;
 }
 
+@media only screen and (max-width: 768px) {
+    .PageContent {
+        width: 100%;
+        line-height: 100%;
+        position: relative;
+        display:contents;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        z-index: -2;
+    }
+}
+
 .AboutDescription {
     /* height: 20fr; */
     width: 85%;
     /* padding-right: 60px; */
     line-height: 155%;
+}
+
+@media only screen and (max-width: 768px) {
+    .AboutDescription {
+        min-height: 100vh;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        width: 100%;
+        line-height: 100%;
+
+    }
 }
 
 .PressBox {
@@ -315,6 +352,12 @@ LINED UP PROPERLY BUT IT BREAKS THE WORK PAGE... have to figure that out */
     padding-right: 20px;
     padding-bottom: 20px;
     justify-self: start;
+}
+
+@media only screen and (max-width: 768px) {
+    .PressBox {
+        display: none
+    }
 }
 
 .datetitle {
