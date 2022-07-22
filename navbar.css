@@ -7,6 +7,9 @@
 
 .hamburger {
     display: none;
+    float: right;
+    width: 75px;
+    margin-top: -52px;
 }
 
 .bar {
