@@ -286,6 +286,7 @@ LINED UP PROPERLY BUT IT BREAKS THE WORK PAGE... have to figure that out */
     background-color: white;
     padding-top: 2rem;
     padding-bottom: 2rem;
+    position: relative;
     /* padding-left: 8rem;
     padding-right: 6rem; */
     display: grid;
