@@ -27,15 +27,6 @@
         padding-left: 2rem !important;
 }
 
-    .footer {
-        height: 2rem;
-        padding-top: .7rem !important;
-        padding-right: 1rem !important;
-        padding-bottom: 0 !important;
-        padding-left: 1rem !important;
-}
-
-
 }
 
 
@@ -397,6 +388,15 @@ ul {
     margin-bottom: 0em;
     /* padding-right: 25rem; */
     /* gap: 10px; */
+}
+@media only screen and (max-width: 768px) {
+    .footer {
+        height: 4.5rem;
+        padding-top: .7rem !important;
+        padding-right: 1rem !important;
+        padding-bottom: 0 !important;
+        padding-left: 1rem !important;
+}
 }
 
 .icons {
