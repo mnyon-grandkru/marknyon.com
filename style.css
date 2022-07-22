@@ -278,6 +278,8 @@ LINED UP PROPERLY BUT IT BREAKS THE WORK PAGE... have to figure that out */
     padding-left: 6rem;
     padding-right: 6rem;
     position: relative;
+    z-index: -1;
+
 }
 
 .PageContent {
@@ -290,6 +292,7 @@ LINED UP PROPERLY BUT IT BREAKS THE WORK PAGE... have to figure that out */
     grid-template-columns: 700fr 400fr;
     align-items: start;
     grid-gap: 30px;
+    z-index: -2;
 }
 
 .AboutDescription {
