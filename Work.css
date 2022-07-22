@@ -4,6 +4,8 @@
     row-gap: 10px;
     justify-content: space-around;
     padding-top: 2rem;
+    position: relative;
+    z-index: 1;
 }
 
 .build-image {
