@@ -26,6 +26,16 @@
         padding-bottom: 0 !important;
         padding-left: 2rem !important;
 }
+
+    .footer {
+        height: 2rem;
+        padding-top: .7rem !important;
+        padding-right: 1rem !important;
+        padding-bottom: 0 !important;
+        padding-left: 1rem !important;
+}
+
+
 }
 
 
