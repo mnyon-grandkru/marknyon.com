@@ -116,7 +116,7 @@ h7 {
     color: #155FF0;
     font-weight: 400;
     --max-font: 18;
-    --min-font: 12;
+    --min-font: 16;
     font-family: var(--main-font);
     font-size: var(--responsive);
     

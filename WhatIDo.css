@@ -11,6 +11,14 @@
     row-gap: 90px;
 }
 
+
+@media only screen and (max-width: 768px) {
+    .WhatIDo {
+        display: contents;
+    }
+
+}
+
 .Description {
     /* height: 20fr;
     width: 10fr; */
@@ -19,6 +27,7 @@
     min-height: 200px;  
     background-color: white;
 }
+
 
 .whatidotitle {
     padding-top: 1em;;
@@ -39,10 +48,20 @@
     font-size: var(--responsive);
 }
 
+
+
 .image {
     width: 100%;
     min-width: 300px;
     height: auto;
+}
+
+@media only screen and (max-width: 768px) {
+    .build-image {
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+    
 }
 
 .container{
