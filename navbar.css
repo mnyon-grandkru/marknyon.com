@@ -111,7 +111,7 @@
   /* Changes from plus sign to negative sign once active */
   
   .accordion .container.active .label::before {
-    content: '-';
+    content: '';
     font-size: 30px;
   }
 

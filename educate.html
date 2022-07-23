@@ -7,10 +7,10 @@
     in mentoring, tutoring, development, engineering and past employment" />
     <title>Mark Nyon - Technologist, Educator - What I Do</title> 
     <link href="style.css" rel="stylesheet">
+    <link href="navbar.css" rel="stylesheet">   
     <link href="Work.css" rel="stylesheet"> 
     <link href="WhatIDo.css" rel="stylesheet">
     <link href="icons.css" rel="stylesheet">
-
     <!-- <link href="icons.css" rel="stylesheet"> -->
     <script src="https://kit.fontawesome.com/98928457df.js" crossorigin="anonymous"></script>    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" /> -->
     <!-- <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/montserrat" type="text/css"/> -->
@@ -23,35 +23,47 @@
 <body>
     <div class="header">
         <h1>Mark Nyon</h1>
-            <div class="line2">
-                <h3>Technologist, Educator</h3>
+        <nav class="navbar">
+            <a href="#" class="nav-logo"><h3>Technologist, Educator</h3></a>
+            <ul class="nav-menu"> 
+                <li class="nav-item">
+                    <a href="work.html" >Work</a>
+                </li>
 
-                    <div class="link1">
-                        <a href="work.html">Work</a>
-                    </div>
-                        
-                    <div class="link2">
-                        <a href="index.html">About</a>
-                    </div>
+                <li class="nav-item">
+                    <a href="index.html">About</a>
+                </li>
 
-                    <div class="dropdown">
-                        <div class="dropbtn2">What I Do
-                        </div>
-                        <div class="dropdown-content">
-                            <a href="educate.html">Educate</a>
-                            <a href="build.html">Build</a>
+                <li class="nav-item">
+                    <div class="accordion">
+                        <div class="container">
+                            <div class="label" style="color:#155FF0">What I Do</div>
+                                <div class="acontent">
+                                    <a href="educate.html">Educate</a>
+                                    <br><br>
+                                    <a href="build.html">Build</a>
+                                </div>                    
+                            </div>
                         </div>
                     </div>
-            </div>    
-    </div> 
+                </li>
+            </ul>
+            
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </div>
 
 <div class="Content">
     <div class="whatidotitle">EDUCATE</div>
         <div class="WhatIDo">
             <div class="Description" id="mark-nyon-experience-educator">
             <h7>Mentoring</h7>
-            <br><br>
-            <p class="whatidid"><em>Thinkful:</em><br>
+            <br>
+            <p class="whatidid"><em>Thinkful:</em><br><br>
                 ● Guided students in 1 on 1 sessions as part of the Thinkful Engineering Flex and 
                 Engineering Immersion programs.<br>
                 ● Tutored students in Rails, JavaScript, Node, Angular and Front End Web Development.<br>
@@ -60,7 +72,7 @@
                 <br><br><br>
             </p>        
     </div>
-        <div class="container">
+        <div class="quotecontainer">
              <div class="box quotemarks"><img id="quoteimage" src="images/test-quotes.png" width="14%"></div>
                 <div class="box darkblue"><p class="testimonial">"I remember early on having trouble getting my portfolio published.  Mark
                     helped me configure the dns settings and hosting on Go Daddy and 
@@ -70,7 +82,7 @@
                     <p><h2>~ Evan Bonertz</h2></p>
                 </div>
          </div>
-        <div class="container">
+        <div class="quotecontainer">
             <div class="box quotemarks"><img id="quoteimage" src="images/test-quotes.png" width="14%"></div>
                 <div class="box blue"><p class="testimonial">"I took a coding bootcamp in 
                 early 2021 and was struggling.  Bootcamps move so fast and I couldn’t 
@@ -82,7 +94,7 @@
         </div>
 
         <div class="Description" id="">
-            <br>
+            <br><br>
             <h7>Tutoring</h7>
             <br>
             <p class="whatidid">Technologist, editor, expert in [[list skills]], worked with [[list some stuff]],
@@ -103,7 +115,7 @@
             <br>
             <h7>Consulting</h7>
             <br>
-            <p class="whatidid"><em>The Barbarian Group:</em><br>
+            <p class="whatidid"><em>The Barbarian Group:</em><br><br>
                 ● Worked with a distributed team on the website and administrative content management system (CMS) for
                 Bloomberg Philanthropies, using Rails as the app server, Refinery as the CMS, Backbone.JS as the client side MV*
                 framework and CouchDB as the database.<br>
@@ -116,7 +128,7 @@
             </p>
         </div>
 
-        <div class="container">
+        <div class="quotecontainer">
             <div class="box quotemarks"><img id="quoteimage" src="images/test-quotes.png" width="14%"></div>
                 <div class="box darkblue"><p class="testimonial">If the amount of text in these boxes is a lot of text, it overflows
                     onto the next line, as seen here.  Not sure what to do.  Either 
@@ -125,7 +137,7 @@
                 </div>
         </div>
             
-        <div class="container">
+        <div class="quotecontainer">
             <div class="box quotemarks">
                 <img id="quoteimage" src="images/test-quotes.png" width="14%"></div>
                 <div class="box blue"><p class="testimonial">"I took a coding bootcamp in 
@@ -158,9 +170,8 @@
 
         <div class="Description" id="">
             <br>
-            <p><h7>Consulting</h7></p>
-            <br>
-            <p class="whatidid"><em>McKinsey & Company, New York NY:</em><br>
+            <h7>Consulting</h7>
+            <p class="whatidid"><em>McKinsey & Company, New York NY:</em><br><br>
                 ● Served as the lead developer on a Rails application that uses predictive analysis to determine the optimal media
                 spend across multiple brands and channels. This application uses R for its statistical analysis.<br>
                 ● Trained novice developers on Ruby and Ruby on Rails and provided guidance on best practices to solve problems.<br>
@@ -170,7 +181,7 @@
             </p>
         </div>
 
-        <div class="container">
+        <div class="quotecontainer">
             <div class="box quotemarks"><img id="quoteimage" src="images/test-quotes.png" width="14%"></div>
                 <div class="box darkblue"><p class="testimonial">If the amount of text in these boxes is a lot of text, it overflows
                     onto the next line, as seen here.  Not sure what to do.  Either 
@@ -201,39 +212,39 @@
 <div class="contactmobile">
     <button onclick= "location = 'contact.html'" class="footerbutton">CONTACT</button>
 </div>
+            <div class="footer">
+                <ul>
+                    <li>
+                        <a style="--max-font: 13;
+                        --min-font: 10;
+                        font-family: var(--main-font);
+                        font-size: var(--responsive);"                     href="privacy_policy.html" target="popup" 
+                        onclick="window.open('privacy_policy.html','popup','width=735,height=600,scrollbars=yes,menubar=no,toolbar=no,location=no,status=no,top=100,left=400'); return false;">
+                        Privacy Policy</a>
+                        <br>
+                        <a style="--max-font: 13;
+                        --min-font: 10;
+                        font-family: var(--main-font);
+                        font-size: var(--responsive);"                     href="terms-and-conditions.html" target="popup" 
+                        onclick="window.open('terms-and-conditions.html','popup','width=735,height=600,scrollbars=yes,menubar=no,toolbar=no,location=no,status=no,top=100,left=400'); return false;">
+                        Terms and Conditions</a>                
+                    </li>
 
-<div class="footer">
-            <ul>
-                <li>
-                    <a style="--max-font: 13;
-                    --min-font: 10;
-                    font-family: var(--main-font);
-                    font-size: var(--responsive);"                     href="privacy_policy.html" target="popup" 
-                    onclick="window.open('privacy_policy.html','popup','width=735,height=600,scrollbars=yes,menubar=no,toolbar=no,location=no,status=no,top=100,left=400'); return false;">
-                    Privacy Policy</a>
-                    <br>
-                    <a style="--max-font: 13;
-                    --min-font: 10;
-                    font-family: var(--main-font);
-                    font-size: var(--responsive);"                     href="terms-and-conditions.html" target="popup" 
-                    onclick="window.open('terms-and-conditions.html','popup','width=735,height=600,scrollbars=yes,menubar=no,toolbar=no,location=no,status=no,top=100,left=400'); return false;">
-                    Terms and Conditions</a>                
-                </li>
+                    <li>
+                        <div class="icons" id="links-to-mark-nyon-social-media">
 
-                <li>
-                    <div class="icons" id="links-to-mark-nyon-social-media">
+                            <a href="https://twitter.com/msnyon" target="new" class="twitterlink"></a>
 
-                        <a href="https://twitter.com/msnyon" target="new" class="twitterlink"></a>
+                            <a href="https://github.com/trystant" target="new" class="githublink"></a>
 
-                        <a href="https://github.com/trystant" target="new" class="githublink"></a>
+                            <a href="https://www.linkedin.com/in/marknyon/" target="new" class="linkedinlink"></a>
 
-                        <a href="https://www.linkedin.com/in/marknyon/" target="new" class="linkedinlink"></a>
+                            <a href="https://blog.grandkru.com/" target="new" class="bloglink"></a>        
 
-                        <a href="https://blog.grandkru.com/" target="new" class="bloglink"></a>        
-
-                        <a href="http://grandkru.com/MarkSamuelNyon.pdf" target="new" class="resumelink"></a>
-                </li>
-            </ul>   
-        </footer> 
+                            <a href="http://grandkru.com/MarkSamuelNyon.pdf" target="new" class="resumelink"></a>
+                    </li>
+                </ul>   
+            </footer> 
+        <script src="hamburger.js"></script>    
     </div>
 </body>
