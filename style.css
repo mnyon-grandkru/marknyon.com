@@ -210,7 +210,7 @@ a.link3 {
     font-family: inherit;
     margin: 0;
     --max-font: 20;
-    --min-font: 20;
+    --min-font: 16;
     font-family: var(--main-font);
     font-size: var(--responsive);
   }
