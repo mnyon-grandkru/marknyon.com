@@ -122,12 +122,12 @@ h7 {
     
 }
 
-.Contact {
+/* .Contact {
     color: black;
     font-family: 'Montserrat';
     font-weight: 300;
     font-size: 30px;
-}
+} */
 
 p {  
     font-weight: 500;
@@ -210,7 +210,7 @@ a.link3 {
     font-family: inherit;
     margin: 0;
     --max-font: 20;
-    --min-font: 16;
+    --min-font: 20;
     font-family: var(--main-font);
     font-size: var(--responsive);
   }
@@ -353,22 +353,45 @@ LINED UP PROPERLY BUT IT BREAKS THE WORK PAGE... have to figure that out */
     padding-bottom: 20px;
     justify-self: start;
 }
-
+/* 
 @media only screen and (max-width: 768px) {
     .PressBox {
-        display: none
+        display: none;
     }
-}
+} */
 
 .datetitle {
     display: flex;
 }
 
 .Contact {
+    color: black;
+    font-family: 'Montserrat';
+    font-weight: 300;
+    font-size: 30px;
     padding-top: 2rem;
     padding-bottom: 2rem;
     padding-left: 6rem;
     padding-right: 6rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .Contact {
+        display: none;
+    }
+}
+
+.contactmobile {
+    visibility: hidden;
+}
+
+@media only screen and (max-width: 768px) {
+    .contactmobile {
+        visibility: visible;
+        text-align: center;
+        margin-top: 15px;
+        margin-bottom: 25px;
+    }
 }
 
 ul {
