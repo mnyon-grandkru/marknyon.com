@@ -92,8 +92,8 @@ h5 {
     /* font-family: 'Source Sans Pro', sans-serif; */
     font-family: 'Fira Sans', sans-serif; 
     padding-bottom: 8px;
-    --max-font: 14;
-    --min-font: 14;
+    --max-font: 15;
+    --min-font: 15;
     font-family: var(--'Fira-Sans');
     font-size: var(--responsive);
   }
@@ -105,8 +105,8 @@ h6 {
     /* font-family: playfair-display, serif; */
     line-height: 150%;
     padding-bottom: 6px;
-    --max-font: 13;
-    --min-font: 13;
+    --max-font: 14;
+    --min-font: 14;
     font-family: var(--main-font);
     font-size: var(--responsive);
   }
