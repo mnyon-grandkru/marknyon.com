@@ -116,7 +116,7 @@ h7 {
     color: #155FF0;
     font-weight: 400;
     --max-font: 18;
-    --min-font: 16;
+    --min-font: 18;
     font-family: var(--main-font);
     font-size: var(--responsive);
     
@@ -336,7 +336,7 @@ LINED UP PROPERLY BUT IT BREAKS THE WORK PAGE... have to figure that out */
         padding-top: 2rem;
         padding-bottom: 2rem;
         width: 100%;
-        line-height: 100%;
+        line-height: 120%;
 
     }
 }
