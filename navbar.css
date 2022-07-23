@@ -37,15 +37,6 @@
     
 }
  
-/* .link5 {
-    visibility: hidden;
-}
-
-@media only screen and (max-width: 768px) {
-    .link5{
-        visibility: visible;
-}
-} */
 /* Test accordion code top */
 
 .accordion {
@@ -92,7 +83,7 @@
     background-color: #EEEEEE;
     height: 0;
     --max-font: 20;
-    --min-font: 16;
+    --min-font: 12;
     font-family: var(--main-font);
     font-size: var(--responsive);
     text-align: justify;

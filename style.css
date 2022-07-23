@@ -156,10 +156,10 @@ p {
 a {
     text-decoration: none;
     font-weight: 400;
-    display: inline-block;
+    /* display: inline-block; */
     color: black;
     --max-font: 20;
-    --min-font: 16;
+    --min-font: 18;
     font-family: var(--main-font);
     font-size: var(--responsive);
 }
