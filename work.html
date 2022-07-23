@@ -7,6 +7,7 @@
     in mentoring, tutoring, development, engineering and past employment" />
     <title>Mark Nyon - Technologist, Educator - Work</title> 
     <link href="style.css" rel="stylesheet">
+    <link href="navbar.css" rel="stylesheet">
     <link href="Work.css" rel="stylesheet">
     <link href="icons.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,30 +21,41 @@
 
 <body>
 
-<div class="header">
-    <h1>Mark Nyon</h1>
-        <div class="line2">
-            <h3>Technologist, Educator</h3>
+    <div class="header">
+        <h1>Mark Nyon</h1>
+        <nav class="navbar">
+            <a href="#" class="nav-logo"><h3>Technologist, Educator</h3></a>
+            <ul class="nav-menu"> 
+                <li class="nav-item">
+                    <a href="work.html"  style="color:#155FF0">Work</a>
+                </li>
 
-                <div class="link1">
-                    <a class=link1 href="work.html">Work</a>
-                </div>
-                    
-                <div class="link2">
+                <li class="nav-item">
                     <a href="index.html">About</a>
-                </div>
+                </li>
 
-                <div class="dropdown">
-                    <div class="dropbtn">What I Do
+                <li class="nav-item">
+                    <div class="accordion">
+                        <div class="container">
+                            <div class="label">What I Do</div>
+                                <div class="acontent">
+                                    <a href="educate.html">Educate</a>
+                                    <br><br>
+                                    <a href="build.html">Build</a>
+                                </div>                    
+                            </div>
+                        </div>
                     </div>
-                    <div class="dropdown-content">
-                        <a href="educate.html">Educate</a>
-                        <a href="build.html">Build</a>
-                    </div>
-                </div>
-        </div>    
-</div> 
-
+                </li>
+            </ul>
+            
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </div>
 <div class="Content">
     <div class="Work" id="mark-nyon-past-work-accomplishments">
         <div class="overlay-image">
@@ -193,42 +205,42 @@
     <div class="contactmobile">
         <button onclick= "location = 'contact.html'" class="footerbutton">CONTACT</button>
     </div>
-    
 
-    <div class="footer">
-        <ul>
-            <li>
-                <a style="--max-font: 13;
-                --min-font: 10;
-                font-family: var(--main-font);
-                font-size: var(--responsive);" 
-                href="privacy_policy.html" target="popup" 
-                onclick="window.open('privacy_policy.html','popup','width=735,height=600,scrollbars=yes,menubar=no,toolbar=no,location=no,status=no,top=100,left=400'); return false;">
-                Privacy Policy</a>
-                <br>
-                <a style="--max-font: 13;
-                --min-font: 10;
-                font-family: var(--main-font);
-                font-size: var(--responsive);" 
-                href="terms-and-conditions.html" target="popup" 
-                onclick="window.open('terms-and-conditions.html','popup','width=735,height=600,scrollbars=yes,menubar=no,toolbar=no,location=no,status=no,top=100,left=400'); return false;">
-                Terms and Conditions</a>                
-            </li>
-    
-            <li>
-                <div class="icons" id="links-to-mark-nyon-social-media">
+            <div class="footer">
+                <ul>
+                    <li>
+                        <a style="--max-font: 13;
+                        --min-font: 10;
+                        font-family: var(--main-font);
+                        font-size: var(--responsive);" 
+                        href="privacy_policy.html" target="popup" 
+                        onclick="window.open('privacy_policy.html','popup','width=735,height=600,scrollbars=yes,menubar=no,toolbar=no,location=no,status=no,top=100,left=400'); return false;">
+                        Privacy Policy</a>
+                        <br>
+                        <a style="--max-font: 13;
+                        --min-font: 10;
+                        font-family: var(--main-font);
+                        font-size: var(--responsive);" 
+                        href="terms-and-conditions.html" target="popup" 
+                        onclick="window.open('terms-and-conditions.html','popup','width=735,height=600,scrollbars=yes,menubar=no,toolbar=no,location=no,status=no,top=100,left=400'); return false;">
+                        Terms and Conditions</a>                
+                    </li>
+            
+                    <li>
+                        <div class="icons" id="links-to-mark-nyon-social-media">
 
-                    <a href="https://twitter.com/msnyon" target="new" class="twitterlink"></a>
-    
-                    <a href="https://github.com/trystant" target="new" class="githublink"></a>
-    
-                    <a href="https://www.linkedin.com/in/marknyon/" target="new" class="linkedinlink"></a>
-    
-                    <a href="https://blog.grandkru.com/" target="new" class="bloglink"></a>        
-    
-                    <a href="http://grandkru.com/MarkSamuelNyon.pdf" target="new" class="resumelink"></a>
-            </li>
-        </ul>   
-    </footer> 
-</div>
+                            <a href="https://twitter.com/msnyon" target="new" class="twitterlink"></a>
+            
+                            <a href="https://github.com/trystant" target="new" class="githublink"></a>
+            
+                            <a href="https://www.linkedin.com/in/marknyon/" target="new" class="linkedinlink"></a>
+            
+                            <a href="https://blog.grandkru.com/" target="new" class="bloglink"></a>        
+            
+                            <a href="http://grandkru.com/MarkSamuelNyon.pdf" target="new" class="resumelink"></a>
+                    </li>
+                </ul>   
+            </footer> 
+        <script src="hamburger.js"></script>    
+    </div>
 </body>

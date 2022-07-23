@@ -181,15 +181,18 @@ a.link3 {
     color:#155FF0;
 }
 
-.link3 {
+/* .link3 {
     float: left;
     overflow: hidden;
-}
+} */
 
 .whatido {
     color:#155FF0;
 }
 
+.label {
+    color:#155FF0;
+}
 
 /* The dropdown container */
 .dropdown {
