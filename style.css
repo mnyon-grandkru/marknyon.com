@@ -8,6 +8,14 @@
     (100vw - 420px) / (1200 - 420))); 
   }
 
+  @media (max-width: 768px) {
+    * {
+        /* height: 100%!important; */
+        overflow: auto!important;
+        max-height: 100% !important;
+}
+}
+
 .header {
     background-color: #EEEEEE;
     height: 135px;
@@ -187,10 +195,6 @@ a.link3 {
 } */
 
 .whatido {
-    color:#155FF0;
-}
-
-.label {
     color:#155FF0;
 }
 
@@ -402,8 +406,24 @@ LINED UP PROPERLY BUT IT BREAKS THE WORK PAGE... have to figure that out */
     .contactmobile {
         visibility: visible;
         text-align: center;
-        margin-top: 15px;
-        margin-bottom: 25px;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+}
+
+.privacy-mobile {
+    visibility: hidden;
+}
+
+@media only screen and (max-width: 768px) {
+    .privacy-mobile {
+        visibility: visible;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: 4em;
+        margin-right: 4em;
+        margin-bottom: 1em;
     }
 }
 
@@ -465,9 +485,15 @@ ul {
     padding-bottom: 2rem;
     padding-right: 6rem;
     margin-bottom: 0em;
+
     /* padding-right: 25rem; */
     /* gap: 10px; */
 }
+
+.links-to-mark-nyon-social-media-mobile {
+    visibility: hidden;
+}
+
 
 @media only screen and (max-width: 768px) {
     .footer {
@@ -477,13 +503,20 @@ ul {
         padding-bottom: 0 !important;
         padding-left: 1rem !important;
     }
-}
-
-/* @media only screen and (max-width: 768px) {
-    .privacy {
+    .footer ul {
         visibility: hidden;
     }
-} */
+    .links-to-mark-nyon-social-media-mobile {
+        visibility: visible;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .privacy {
+        visibility: hidden;
+        width: 0px;
+    }
+}
 
 .icons {
     display: flex;
