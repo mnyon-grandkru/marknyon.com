@@ -25,8 +25,7 @@
         padding-right: 2rem !important;
         padding-bottom: 0 !important;
         padding-left: 2rem !important;
-}
-
+    }
 }
 
 
@@ -81,7 +80,7 @@ h4 {
     /* ORIGINAL font-family: playfair-display, serif; */
     font-family: 'Fira Sans', sans-serif;
     --max-font: 18;
-    --min-font: 12;
+    --min-font: 16;
     font-family: var(--'Fira-Sans');
     font-size: var(--responsive);
   }
@@ -94,7 +93,7 @@ h5 {
     font-family: 'Fira Sans', sans-serif; 
     padding-bottom: 8px;
     --max-font: 14;
-    --min-font: 10;
+    --min-font: 14;
     font-family: var(--'Fira-Sans');
     font-size: var(--responsive);
   }
@@ -107,7 +106,7 @@ h6 {
     line-height: 150%;
     padding-bottom: 6px;
     --max-font: 13;
-    --min-font: 8;
+    --min-font: 13;
     font-family: var(--main-font);
     font-size: var(--responsive);
   }
@@ -121,6 +120,14 @@ h7 {
     font-size: var(--responsive);
     
 }
+
+@media only screen and (max-width: 768px) {
+    h7 {
+        font-weight: 500;
+        
+    }
+}
+
 
 /* .Contact {
     color: black;
@@ -332,7 +339,7 @@ LINED UP PROPERLY BUT IT BREAKS THE WORK PAGE... have to figure that out */
 
 @media only screen and (max-width: 768px) {
     .AboutDescription {
-        min-height: 100vh;
+        /* min-height: 100vh; */
         padding-top: 2rem;
         padding-bottom: 2rem;
         width: 100%;
@@ -353,12 +360,15 @@ LINED UP PROPERLY BUT IT BREAKS THE WORK PAGE... have to figure that out */
     padding-bottom: 20px;
     justify-self: start;
 }
-/* 
+
 @media only screen and (max-width: 768px) {
     .PressBox {
-        display: none;
+        height: inherit;
+        width: inherit;
+        justify-self: normal;
+   
     }
-} */
+}
 
 .datetitle {
     display: flex;
@@ -455,6 +465,7 @@ ul {
     /* padding-right: 25rem; */
     /* gap: 10px; */
 }
+
 @media only screen and (max-width: 768px) {
     .footer {
         height: 4.5rem;
@@ -462,8 +473,14 @@ ul {
         padding-right: 1rem !important;
         padding-bottom: 0 !important;
         padding-left: 1rem !important;
+    }
 }
-}
+
+/* @media only screen and (max-width: 768px) {
+    .privacy {
+        visibility: hidden;
+    }
+} */
 
 .icons {
     display: flex;

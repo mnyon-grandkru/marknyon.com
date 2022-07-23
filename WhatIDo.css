@@ -32,10 +32,19 @@
 .whatidotitle {
     padding-top: 1em;;
     text-align: center;
-    font-size: x-large;
-    
-    /* position: sticky;
-    top: 0; */
+    /* font-weight: 500; */
+    --max-font: 24;
+    --min-font: 20;
+    font-family: var(--main-font);
+    font-size: var(--responsive);
+
+}
+
+@media only screen and (max-width: 768px) {
+    .whatidotitle {
+        font-weight: 500;
+        
+    }
 }
 
 .whatidid {
