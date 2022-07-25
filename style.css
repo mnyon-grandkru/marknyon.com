@@ -490,8 +490,27 @@ ul {
     /* gap: 10px; */
 }
 
-.links-to-mark-nyon-social-media-mobile {
+#links-to-mark-nyon-social-media {
+    visibility: visible;
+    z-index: -5;
+}
+
+#links-to-mark-nyon-social-media-mobile {
     visibility: hidden;
+    z-index: -6;
+}
+
+@media only screen and (max-width: 768px) {
+    #links-to-mark-nyon-social-media-mobile {
+        visibility: visible;
+            z-index: -6;
+
+    }
+    #links-to-mark-nyon-social-media {
+        visibility: hidden;
+        z-index: -5;
+
+    }
 }
 
 
@@ -505,11 +524,24 @@ ul {
     }
     .footer ul {
         visibility: hidden;
+    } 
+}   
+
+
+
+
+/* @media only screen and (max-width: 768px) {
+    .footer {
+        height: 4.5rem;
+        padding-top: .7rem !important;
+        padding-right: 1rem !important;
+        padding-bottom: 0 !important;
+        padding-left: 1rem !important;
     }
-    .links-to-mark-nyon-social-media-mobile {
-        visibility: visible;
+    .footer ul {
+        visibility: hidden;
     }
-}
+} */
 
 @media only screen and (max-width: 768px) {
     .privacy {
