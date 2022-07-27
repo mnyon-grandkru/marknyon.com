@@ -142,8 +142,8 @@ h6 {
 h7 {
     color: #155FF0;
     font-weight: 400;
-    --max-font: 18;
-    --min-font: 18;
+    --max-font: 20;
+    --min-font: 20;
     font-family: var(--main-font);
     font-size: var(--responsive);
     
@@ -216,6 +216,16 @@ a.link3 {
 
 .whatido {
     color:#155FF0;
+}
+
+p.whatidid {
+    font-size: 16px;
+}
+
+p.whatididcompany {
+    font-style: italic;
+    font-size: 18px;
+    font-weight: normal;
 }
 
 /* The dropdown container */
