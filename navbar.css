@@ -84,11 +84,11 @@
     background-color: #EEEEEE;
     height: 0;
     --max-font: 20;
-    --min-font: 12;
+    --min-font: 16;
     font-family: var(--main-font);
     font-size: var(--responsive);
     text-align: justify;
-    width: 6em;
+    width: 6.5em;
     overflow: hidden;
     transition: 0.5s;
   }
