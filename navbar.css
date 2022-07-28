@@ -3,7 +3,6 @@
     justify-content: space-between;
     align-items: right;
     z-index: 5;
-    /* padding: 1rem 1.5rem; */
 }
 
 .hamburger {
@@ -24,11 +23,8 @@
     background-color: #000000;
 }
 
-
 .nav-menu {
     display: flex;
-    
-    
 }
 
 .nav-item {
@@ -37,25 +33,15 @@
     
 }
 
- 
-/* Test accordion code top */
-
 .accordion {
-    /* width: 800px;
-    margin: 90px auto; */
     color: black;
     width: 10rem;
-    /* background-color: white; */
-    /* padding: 45px 45px; */
   }
 
   .accordion .container {
     position: relative;
-    /* margin: 10px 10px; */
   }
-  
-  /* Positions the labels relative to the .container. Adds padding to the top and bottom and increases font size. Also makes its cursor a pointer */
-  
+    
   .accordion .label {
     position: relative;
     /* padding: 10px 0; */
@@ -76,9 +62,7 @@
     /* font-size: 30px; */
     transform: translateY(-50%);
   }
-  
-  /* Hides the content (height: 0), decreases font size, justifies text and adds transition */
-  
+    
   .accordion .acontent {
     position: relative;
     background-color: #EEEEEE;
@@ -99,38 +83,15 @@
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
   }
-  
-  /* Changes from plus sign to negative sign once active */
-  
+    
   .accordion .container.active .label::before {
     content: '';
     font-size: 30px;
   }
 
-  /* Test accordion code bottom */
-
-
-
-
-.nav-link{
-    font-size: 1.6rem;
-    font-weight: 400;
-    color: #475569;
-}
-
 .nav-link:hover{
     color: #482ff7;
 }
-
-
-
-/* .nav-logo {
-    font-size: 2.1rem;
-    font-weight: 500;
-    color: #482ff7;
-} */
-
-
 
 @media only screen and (max-width: 768px) {
     .nav-menu {
@@ -146,7 +107,6 @@
         box-shadow:
             0 10px 27px rgba(0, 0, 0, 0.05);
         z-index: 4;
-        
     }
     
     .nav-menu.active {
