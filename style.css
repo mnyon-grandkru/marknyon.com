@@ -470,6 +470,12 @@ ul {
     font-size: var(--responsive);
 }
 
+@media only screen and (max-width: 768px) {
+    .footerbutton {
+        font-weight: 600;
+    }
+}
+
 .footerbutton:hover {
     background-color: #155FF0;
     color: white;
