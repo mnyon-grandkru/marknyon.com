@@ -29,6 +29,10 @@
     border-radius: 6px;
     box-shadow: 5px 5px 5px lightgrey;
   }
+
+  .buildmobile {
+    visibility: hidden;
+  }
   
 .overlay-image .image {
     display: block;
