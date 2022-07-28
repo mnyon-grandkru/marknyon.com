@@ -61,12 +61,6 @@ h1 {
     font-size: var(--responsive);
 }
 
-@media only screen and (max-width: 768px) {
-    h1 {
-        font-weight: 500;
-        
-    }
-}
 
 h2 {
     color: rgba(255, 255, 255, 0.726);
@@ -88,27 +82,16 @@ h3 {
     font-size: var(--responsive);
   }
 
-  @media only screen and (max-width: 768px) {
-    h3 {
-        font-weight: 500;
-        
-    }
-}
-
 h4 {    
     color: rgb(57, 55, 55);
     font-weight: normal;
     /* ORIGINAL font-family: playfair-display, serif; */
     font-family: 'Fira Sans', sans-serif;
-    font-size: 18px;
+    --max-font: 18;
+    --min-font: 16;
+    font-family: var(--'Fira-Sans');
+    font-size: var(--responsive);
   }
-  
-  @media only screen and (max-width: 768px) {
-    h6 {
-        font-size: 18px;
-        
-    }
-}
 
 h5 {
     color: rgb(32, 31, 31);
@@ -117,15 +100,12 @@ h5 {
     /* font-family: 'Source Sans Pro', sans-serif; */
     font-family: 'Fira Sans', sans-serif; 
     padding-bottom: 8px;
-    font-size: 15px;
+    --max-font: 15;
+    --min-font: 15;
+    font-family: var(--'Fira-Sans');
+    font-size: var(--responsive);
   }
-  
-  @media only screen and (max-width: 768px) {
-    h5 {
-        font-size: 16px;
-        
-    }
-}
+
 h6 {
     color: black;
     font-weight: 400;
@@ -142,8 +122,8 @@ h6 {
 h7 {
     color: #155FF0;
     font-weight: 400;
-    --max-font: 20;
-    --min-font: 20;
+    --max-font: 18;
+    --min-font: 18;
     font-family: var(--main-font);
     font-size: var(--responsive);
     
@@ -216,16 +196,6 @@ a.link3 {
 
 .whatido {
     color:#155FF0;
-}
-
-p.whatidid {
-    font-size: 16px;
-}
-
-p.whatididcompany {
-    font-style: italic;
-    font-size: 18px;
-    font-weight: normal;
 }
 
 /* The dropdown container */
@@ -341,6 +311,7 @@ LINED UP PROPERLY BUT IT BREAKS THE WORK PAGE... have to figure that out */
 
 .PageContent {
     min-height: calc(100vh - 250px);
+
     background-color: white;
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -367,12 +338,15 @@ LINED UP PROPERLY BUT IT BREAKS THE WORK PAGE... have to figure that out */
 }
 
 .AboutDescription {
+    /* height: 20fr; */
     width: 85%;
+    /* padding-right: 60px; */
     line-height: 155%;
 }
 
 @media only screen and (max-width: 768px) {
     .AboutDescription {
+        /* min-height: 100vh; */
         padding-top: 2rem;
         padding-bottom: 2rem;
         width: 100%;
@@ -471,7 +445,7 @@ ul {
     padding-top: 10px;
     /* font-size: 14px; */
     --max-font: 14;
-    --min-font: 12;
+    --min-font: 10;
     font-family: var(--main-font);
     font-size: var(--responsive);
     font-weight: normal;
@@ -496,13 +470,6 @@ ul {
     font-size: var(--responsive);
 }
 
-@media only screen and (max-width: 768px) {
-    .footerbutton {
-        font-weight: bold;
-    }
-}
-
-
 .footerbutton:hover {
     background-color: #155FF0;
     color: white;
@@ -518,10 +485,24 @@ ul {
     padding-bottom: 2rem;
     padding-right: 6rem;
     margin-bottom: 0em;
+    position: relative;
+    visibility: visible;
 
     /* padding-right: 25rem; */
     /* gap: 10px; */
 }
+
+@media only screen and (max-width: 768px) {
+    .footer {
+        visibility: hidden;
+        height: 0rem !important;
+        padding-top: 0rem !important;
+        padding-right: 1rem !important;
+        padding-bottom: 0 !important;
+        padding-left: 1rem !important;
+    }
+}
+
 
 #links-to-mark-nyon-social-media {
     visibility: visible;
@@ -530,34 +511,52 @@ ul {
 
 #links-to-mark-nyon-social-media-mobile {
     visibility: hidden;
-    z-index: -6;
+    height: 0px;
 }
-
 @media only screen and (max-width: 768px) {
     #links-to-mark-nyon-social-media-mobile {
         visibility: visible;
-            z-index: -6;
+        height: 100%;
+
 
     }
     #links-to-mark-nyon-social-media {
         visibility: hidden;
-        z-index: -5;
 
     }
 }
 
+.footermobile {
+    /* display: flex; */
+    /* justify-content: space-around; */
+    background-color: #eeeeee; 
+    padding-left: 0rem;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    padding-right: 0rem;
+    margin-bottom: 0em;
+    /* visibility: hidden; */
+
+    /* padding-right: 25rem; */
+    /* gap: 10px; */
+}
+
+
+
+
 
 @media only screen and (max-width: 768px) {
-    .footer {
+    .footermobile {
+        visibility: visible;
         height: 4.5rem;
-        padding-top: .7rem !important;
+        padding-top: 1rem !important;
         padding-right: 1rem !important;
         padding-bottom: 0 !important;
         padding-left: 1rem !important;
     }
-    .footer ul {
-        visibility: hidden;
-    } 
+
+
+
 }   
 
 
@@ -579,7 +578,6 @@ ul {
 @media only screen and (max-width: 768px) {
     .privacy {
         visibility: hidden;
-        width: 0px;
     }
 }
 
@@ -588,3 +586,74 @@ ul {
     justify-content: center;
     gap: 10px;
 }
+
+.twitterlink2 {
+    width: 35px;
+    height: 35px;
+    background-image: url(icons/twitter_2.png); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.35;
+}
+.twitterlink2:hover{
+    width: 35px;
+    height: 35px;
+    background-image: url(icons/twitter3_blue.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 1;
+}
+
+.githublink2 {
+    background-image: url(icons/guithub.png); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 35px;
+    height: 35px;
+    opacity: 0.35;
+}
+.githublink2:hover{
+    background-image: url(icons/guithub_blue.png);
+    opacity: 1;
+}
+
+.linkedinlink2 {
+    background-image: url(icons/linkedin.png); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 35px;
+    height: 35px;
+    opacity: 0.35;
+}
+.linkedinlink2:hover{
+    background-image: url(icons/linkedin_blue.png);
+    opacity: 1.0;
+}
+
+.bloglink2 {
+    background-image: url(icons/blog.png); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 35px;
+    height: 35px;
+    opacity: 0.35;
+}
+.bloglink2:hover{
+    background-image: url(icons/blog_blue.png);
+    opacity: 1;
+}
+
+.resumelink2 {
+    background-image: url(icons/resume.png); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 35px;
+    height: 35px;
+    opacity: 0.35;
+}
+.resumelink2:hover{
+    background-image: url(icons/resume_blue.png);
+    opacity: 1;
+}
+
+
