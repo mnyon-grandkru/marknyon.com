@@ -1,0 +1,139 @@
+.WhatIDo {
+    background-color: white;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    /* padding-left: 8rem;
+    padding-right: 6rem; */
+    display: grid;
+    grid-template-columns: 200fr 200fr;
+    align-items: start;
+    column-gap: 100px;
+    row-gap: 90px;
+}
+
+
+@media only screen and (max-width: 970px) {
+    .WhatIDo {
+        display: contents;
+    }
+
+}
+
+.Description {
+    /* height: 20fr;
+    width: 10fr; */
+    /* padding-right: 60px; */
+    line-height: 150%;
+    min-height: 200px;  
+    background-color: white;
+}
+
+
+.whatidotitle {
+    padding-top: 1em;;
+    text-align: center;
+    /* font-weight: 500; */
+    --max-font: 24;
+    --min-font: 24;
+    font-family: var(--main-font);
+    font-size: var(--responsive);
+
+}
+
+@media only screen and (max-width: 768px) {
+    .whatidotitle {
+        font-weight: 500;
+        
+    }
+}
+
+.whatidid {
+    line-height: 26px;
+    /* font-size: 16px; */
+    font-weight: 400;
+    --max-font: 15;
+    --min-font: 15;
+    font-family: var(--main-font);
+    font-size: var(--responsive);
+}
+
+
+
+.image {
+    width: 100%;
+    min-width: 300px;
+    height: auto;
+}
+
+.build-image {
+    margin-top: -20px;
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    .build-image {
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+    
+}
+
+.quotecontainer{
+    position: relative;
+}
+
+@media only screen and (max-width: 1050px) {
+    .quotecontainer {
+        height: 0rem;
+        visibility: hidden !important;
+
+    }
+}
+
+
+.box {
+    /* width: 450px;
+    height: 250px; */
+    /* opacity: 0.9; */
+    position: absolute;
+}
+
+#quoteimage {
+    opacity: 0.65;
+}
+
+.quotemarks {
+    background: transparent;
+    z-index: 9;
+}
+
+.blue {
+    top: 30px;
+    left: 15px;
+    background: #A6D0F0;
+    z-index: 3;
+    box-shadow: 5px 5px 5px lightgrey;
+    border-radius: 6px;
+    padding: 40px;
+    /* justify-self: start; */
+}
+
+.darkblue{
+    top: 30px;
+    left: 15px;
+    background: #0A98DD;
+    z-index: 3;
+    box-shadow: 5px 5px 5px lightgrey;
+    border-radius: 6px;
+    padding: 6vh;
+    /* justify-self: end; */
+}
+
+.testimonial {
+    line-height: 32px;
+    font-size: 15px;
+    font-weight: 400;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+
+}
