@@ -137,3 +137,29 @@
     padding-left: 1.5rem;
 
 }
+
+
+.buildcompany {
+    padding-bottom: 30px;
+}
+
+@media only screen and (max-width: 768px) {
+    .buildcompany {
+        padding-bottom: 0px;
+        
+    }
+}
+
+.DescriptionBuild {
+    line-height: 170%;
+    background-color: white;
+    align-self: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .DescriptionBuild {
+        padding-bottom: 50px;
+        padding-top: 0px;
+        
+    }
+}
