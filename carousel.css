@@ -106,7 +106,7 @@
   margin: 0;
   padding: 0;
   position: absolute;
-  bottom: 2%;
+  bottom: 0%;
   left: 0;
   right: 0;
   text-align: center;
@@ -119,14 +119,14 @@
 }
 
 .carousel-bullet {
-  color: #fff;
+  color: black;
   cursor: pointer;
   display: block;
-  font-size: 35px;
+  font-size: 55px;
 }
 
 .carousel-bullet:hover {
-  color: #aaaaaa;
+  color: #155FF0;
 }
 
 #carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
@@ -176,3 +176,17 @@
 .heading {
   text-align: center;
 }
+
+.work-image {
+  position: relative;
+  border-radius: 6px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+  }
+  
