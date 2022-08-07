@@ -94,7 +94,11 @@
 
 #carousel-1:checked ~ .control-1,
 #carousel-2:checked ~ .control-2,
-#carousel-3:checked ~ .control-3 {
+#carousel-3:checked ~ .control-3,
+#carousel-4:checked ~ .control-4,
+#carousel-5:checked ~ .control-5,
+#carousel-6:checked ~ .control-6,
+#carousel-7:checked ~ .control-7 {
   display: block;
   position: absolute;
 }
@@ -104,7 +108,7 @@
   margin: 0;
   padding: 0;
   position: absolute;
-  bottom: 20%;
+  /* bottom: 20%; */
   left: 0;
   right: 0;
   text-align: center;
@@ -120,22 +124,36 @@
   color: black;
   cursor: pointer;
   display: block;
-  font-size: 55px;
+  font-size: 65px;
+  margin-top: 20px;
+
 }
 
 .carousel-bullet:hover {
   color: #155FF0;
 }
 
+.carousel-bullet:active {
+  color: #155FF0;
+}
+
+
+
 #carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
 #carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
-#carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet {
+#carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet,
+#carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(4) .carousel-bullet,
+#carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(5) .carousel-bullet,
+#carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(6) .carousel-bullet,
+#carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(7) .carousel-bullet
+ {
   color: #428bca;
 }
 
 @media only screen and (max-width: 768px) {
   .carousel-bullet {
-      visibility: hidden;
+      /* visibility: hidden; */
+      margin-top: 20px;
       
   }
 }
@@ -176,9 +194,11 @@
   margin-right: auto;
   position: relative;
   display: block;
+  margin-top: 50px;
 
-  
+
   }
+
   
   .work-description {
     position: absolute;
