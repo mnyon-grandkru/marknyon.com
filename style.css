@@ -573,3 +573,9 @@ ul {
 }
 
 
+#mark-nyon-engineer-police-shootings-tracker-app-afrotech a {
+    font-family: Fira Sans, sans-serif;    
+    --max-font: 13;
+    --min-font: 13;
+    font-size: var(--responsive);
+}
