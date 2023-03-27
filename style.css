@@ -116,17 +116,7 @@ h6 {
     font-family: var(--main-font);
     font-size: var(--responsive);
   }
-
-h7 {
-    color: #155FF0;
-    font-weight: 400;
-    --max-font: 20;
-    --min-font: 18;
-    font-family: var(--main-font);
-    font-size: var(--responsive);
-    
-}
-
+  
 p {  
     font-weight: 500;
     color: black;
