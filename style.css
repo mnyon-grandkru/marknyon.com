@@ -127,6 +127,7 @@ p {
   }
 
 a {
+    cursor: pointer;
     text-decoration: none;
     font-weight: 400;
     color: black;
@@ -134,6 +135,7 @@ a {
     --min-font: 18;
     font-family: var(--main-font);
     font-size: var(--responsive);
+    z-index: 20;
 }
 
 a:visited {
