@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mark Nyon</title>
+    <meta name="description" content="AI Automation Specialist & Technical Educator">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        :root {
+            --primary: #2563eb;
+            --primary-dark: #1d4ed8;
+            --text: #1f2937;
+            --text-light: #6b7280;
+            --background: #ffffff;
+            --background-alt: #f9fafb;
+            --border: #e5e7eb;
+            --spacing-xs: 0.5rem;
+            --spacing-sm: 1rem;
+            --spacing-md: 1.5rem;
+            --spacing-lg: 2rem;
+            --spacing-xl: 3rem;
+            --radius: 0.5rem;
+            --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            line-height: 1.5;
+            color: var(--text);
+            background: var(--background);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 var(--spacing-md);
+        }
+
+        header {
+            padding: var(--spacing-lg) 0;
+            background: var(--background);
+            border-bottom: 1px solid var(--border);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--text);
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: var(--spacing-md);
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--text-light);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        .hero {
+            padding: var(--spacing-xl) 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: var(--spacing-md);
+            background: linear-gradient(to right, var(--primary), var(--primary-dark));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            color: var(--text-light);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            margin-top: var(--spacing-md);
+            background: var(--primary);
+            color: white;
+            text-decoration: none;
+            border-radius: var(--radius);
+            font-weight: 500;
+            transition: background-color 0.2s;
+        }
+
+        .cta-button:hover {
+            background: var(--primary-dark);
+        }
+
+        .features {
+            padding: var(--spacing-xl) 0;
+            background: var(--background-alt);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--spacing-lg);
+            margin-top: var(--spacing-lg);
+        }
+
+        .feature-card {
+            background: var(--background);
+            padding: var(--spacing-lg);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+        }
+
+        .feature-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .feature-card p {
+            color: var(--text-light);
+        }
+
+        footer {
+            padding: var(--spacing-lg) 0;
+            text-align: center;
+            color: var(--text-light);
+            border-top: 1px solid var(--border);
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .nav-links {
+                display: none;
+            }
+        }
+
+        .projects {
+            padding: var(--spacing-xl) 0;
+        }
+
+        .project-grid {
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-xl);
+            margin-top: var(--spacing-lg);
+        }
+
+        .project-card {
+            background: var(--background);
+            padding: var(--spacing-xl);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            transition: transform 0.2s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .project-card i {
+            font-size: 3rem;
+            color: var(--primary);
+            margin-bottom: var(--spacing-md);
+        }
+
+        .project-card h3 {
+            font-size: 2rem;
+            margin-bottom: var(--spacing-md);
+            color: var(--text);
+        }
+
+        .project-card p {
+            font-size: 1.25rem;
+            color: var(--text-light);
+            max-width: 800px;
+            line-height: 1.6;
+        }
+
+        .contact {
+            padding: var(--spacing-xl) 0;
+            background: var(--background-alt);
+        }
+
+        .contact-content {
+            max-width: 600px;
+            margin: var(--spacing-lg) auto;
+            text-align: center;
+        }
+
+        .contact-methods {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: var(--spacing-lg);
+            margin-top: var(--spacing-lg);
+        }
+
+        .contact-link {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--spacing-sm);
+            color: var(--text);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s;
+            padding: var(--spacing-sm) var(--spacing-md);
+            border-radius: var(--radius);
+            background: var(--background);
+        }
+
+        .contact-link:hover {
+            color: var(--primary);
+            background: var(--background-alt);
+        }
+
+        .contact-link i {
+            font-size: 1.25rem;
+        }
+
+        .experience {
+            padding: var(--spacing-xl) 0;
+            background: var(--background);
+        }
+
+        .experience-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--spacing-lg);
+            margin-top: var(--spacing-lg);
+        }
+
+        .experience-card {
+            background: var(--background-alt);
+            padding: var(--spacing-lg);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            transition: transform 0.2s;
+        }
+
+        .experience-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .experience-card .company {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--primary);
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .experience-card p {
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+    </style>
+    <script>
+        function sendEmail() {
+            const email = atob('bXNueW9uQGhleS5jb20='); // Base64 encoded email
+            window.location.href = 'mailto:' + email;
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="/" class="logo">Mark Nyon</a>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Mark Nyon</h1>
+                    <p class="tagline">AI Automation Specialist & Technical Educator</p>
+                    <p class="description">Transforming businesses through intelligent automation and empowering teams through personalized education</p>
+                    <a href="javascript:void(0)" onclick="sendEmail()" class="cta-button">Let's Talk</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2>Featured Projects</h2>
+                <div class="project-grid">
+                    <div class="project-card">
+                        <i class="fas fa-brain"></i>
+                        <h3>AI Workflow Automation</h3>
+                        <p>Implemented custom AI solutions that reduced manual processing time by 70% for a financial services client</p>
+                    </div>
+                    <div class="project-card">
+                        <i class="fas fa-video"></i>
+                        <h3>Technical Training Series</h3>
+                        <p>Created comprehensive video tutorials and documentation for a tech company's internal training program</p>
+                    </div>
+                    <div class="project-card">
+                        <i class="fas fa-chart-line"></i>
+                        <h3>Process Optimization</h3>
+                        <p>Developed automated reporting systems that improved data accuracy and reduced processing time by 85%</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="experience">
+            <div class="container">
+                <h2>Experience</h2>
+                <div class="experience-grid">
+                    <div class="experience-card">
+                        <div class="company">McKinsey</div>
+                        <p>Created a Rails app that used predictive analytics (in R) to determine optimal media spending across brands and channels.</p>
+                    </div>
+                    <div class="experience-card">
+                        <div class="company">Viacom</div>
+                        <p>Collaborated with the e-commerce team to create a music preview and purchase platform and MTV's first newsletter subscription, resulting in multiple #1 digital album downloads.</p>
+                    </div>
+                    <div class="experience-card">
+                        <div class="company">Thinkful</div>
+                        <p>Mentored over 75 students, introducing them to careers in technology and software development.</p>
+                    </div>
+                    <div class="experience-card">
+                        <div class="company">Bloomberg Philanthropies</div>
+                        <p>Part of team that revamped its web page, giving it a striking new look and a much needed content management system. The transformation led to a noticeable increase in new, unique, and returning visitor sessions.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Ready to transform your business with AI automation or enhance your team's technical skills?</p>
+                        <div class="contact-methods">
+                            <a href="javascript:void(0)" onclick="sendEmail()" class="contact-link">
+                                <i class="fas fa-envelope"></i>
+                                Email Me
+                            </a>
+                            <a href="https://linkedin.com/in/marknyon" class="contact-link">
+                                <i class="fab fa-linkedin"></i>
+                                LinkedIn
+                            </a>
+                            <a href="https://github.com/mnyon-grandkru" class="contact-link">
+                                <i class="fab fa-github"></i>
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Mark Nyon. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
