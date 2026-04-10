@@ -122,6 +122,7 @@ body {
     transition: all 0.3s ease;
     position: relative;
     padding: 0.5rem 0;
+    padding-left: 0.5rem;
 }
 
 .nav-link::after {
@@ -516,7 +517,9 @@ section {
     border-radius: 12px;
     box-shadow: 0 4px 6px var(--shadow-light);
     border: 1px solid var(--border-color);
-    transition: all 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
 }
 
 .expertise-card:hover {
@@ -524,30 +527,80 @@ section {
     box-shadow: 0 12px 24px var(--shadow-medium);
 }
 
+/* Screenshot-like gradient backgrounds for each card */
+.expertise-grid .expertise-card:nth-child(1) {
+    background: linear-gradient(135deg, #1e3a5f 0%, #2d6a9f 100%);
+}
+
+.expertise-grid .expertise-card:nth-child(2) {
+    background: linear-gradient(135deg, #1a472a 0%, #27ae60 100%);
+}
+
+.expertise-grid .expertise-card:nth-child(3) {
+    background: linear-gradient(135deg, #4a1a3a 0%, #9b59b6 100%);
+}
+
+/* White overlay (card-glow) — hidden by default, revealed on hover */
+.card-glow {
+    position: absolute;
+    inset: 0;
+    background: var(--bg-primary);
+    opacity: 0;
+    z-index: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    border-radius: inherit;
+}
+
+.expertise-card:hover .card-glow {
+    opacity: 0.93;
+}
+
 .expertise-card h3 {
     font-size: 1.5rem;
     font-weight: 700;
-    color: var(--text-primary);
+    color: rgba(255, 255, 255, 0.95);
     margin-bottom: 1rem;
     font-family: 'Space Grotesk', sans-serif;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     padding: 0.75rem 1rem;
     border-radius: 8px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
     text-align: center;
+    position: relative;
+    z-index: 1;
+    transition: color 0.3s ease, background 0.3s ease;
+}
+
+.expertise-card:hover h3 {
+    color: var(--text-primary);
+    background: rgba(255, 255, 255, 0.5);
 }
 
 [data-theme="dark"] .expertise-card h3 {
-    background: rgba(0, 0, 0, 0.2);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+[data-theme="dark"] .expertise-card:hover h3 {
+    color: var(--text-primary);
+    background: rgba(0, 0, 0, 0.3);
 }
 
 .expertise-card p {
     color: var(--text-secondary);
     line-height: 1.7;
     text-align: left;
+    position: relative;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.expertise-card:hover p {
+    opacity: 1;
 }
 
 /* Experience Section */
