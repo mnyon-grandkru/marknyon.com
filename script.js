@@ -134,46 +134,6 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-
-// Add CSS for ripple effect
-const style = document.createElement('style');
-style.textContent = `
-    .btn {
-        position: relative;
-        overflow: hidden;
-    }
-
-    .ripple {
-        position: absolute;
-        border-radius: 50%;
-        background: rgba(255, 255, 255, 0.6);
-        transform: scale(0);
-        animation: ripple-animation 0.6s linear;
-        pointer-events: none;
-    }
-
-    @keyframes ripple-animation {
-        to {
-            transform: scale(4);
-            opacity: 0;
-        }
-    }
-
-    .nav-link.active {
-        color: var(--accent-primary);
-    }
-
-    .nav-link.active::after {
-        width: 100%;
-    }
-
-    /* Smooth transitions for theme switching */
-    * {
-        transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
-    }
-`;
-document.head.appendChild(style);
-
 // Performance optimization: Throttle scroll events
 function throttle(func, limit) {
     let inThrottle;
