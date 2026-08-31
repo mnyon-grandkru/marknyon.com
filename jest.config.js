@@ -1,16 +1,16 @@
-module.exports = {
+export default {
   testEnvironment: 'jsdom',
   setupFilesAfterEnv: ['<rootDir>/jest.setup.js'],
-  moduleNameMapping: {
+  moduleNameMapper: {
     '\\.(css|less|scss|sass)$': 'identity-obj-proxy',
   },
   testMatch: [
-    '**/__tests__/**/*.js',
-    '**/?(*.)+(spec|test).js'
+    '**/__tests__/**/*.test.js',
   ],
   collectCoverageFrom: [
     'script.js',
     '!**/node_modules/**',
     '!**/coverage/**'
-  ]
+  ],
+  transform: {},
 };
