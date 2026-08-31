@@ -2,12 +2,14 @@
   "name": "marknyon.com",
   "version": "1.0.0",
   "type": "module",
-  "main": "script.js",
+  "main": "public/script.js",
   "scripts": {
     "test": "NODE_OPTIONS=--experimental-vm-modules jest",
     "test:watch": "NODE_OPTIONS=--experimental-vm-modules jest --watch",
     "test:coverage": "NODE_OPTIONS=--experimental-vm-modules jest --coverage",
-    "test:tdd": "NODE_OPTIONS=--experimental-vm-modules jest --watch --verbose"
+    "test:tdd": "NODE_OPTIONS=--experimental-vm-modules jest --watch --verbose",
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy"
   },
   "repository": {
     "type": "git",
@@ -25,6 +27,7 @@
     "@testing-library/jest-dom": "^6.6.4",
     "jest": "^30.0.5",
     "jest-environment-jsdom": "^30.5.0",
-    "jsdom": "^26.1.0"
+    "jsdom": "^26.1.0",
+    "wrangler": "^4.34.0"
   }
 }

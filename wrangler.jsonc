@@ -1,0 +1,10 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "marknyon-com",
+  "compatibility_date": "2026-08-31",
+  "account_id": "120d0baf442854f3f9b21e237688ae98",
+  "workers_dev": true,
+  "assets": {
+    "directory": "./public"
+  }
+}
