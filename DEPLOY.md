@@ -44,11 +44,17 @@ Suggested permissions:
 
 Merge [PR #18](https://github.com/mnyon-grandkru/marknyon.com/pull/18). Push to `main` runs `.github/workflows/deploy-cloudflare.yml` (tests + `npm run deploy`).
 
-Expected production URLs after deploy:
+Expected URL after first deploy (`npm run deploy`):
 
 - https://marknyon-com.mark-120.workers.dev
-- https://marknyon.com
-- https://www.marknyon.com
+
+Optional second step — attach custom domains (after workers.dev is verified):
+
+```bash
+npm run deploy:domains   # uses wrangler.custom-domains.jsonc
+```
+
+Then verify `https://marknyon.com` and `https://www.marknyon.com`.
 
 ### 3. Manual deploy (alternative)
 
