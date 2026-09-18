@@ -1,7 +1,7 @@
 import { jest, describe, test, expect, beforeEach, afterEach } from '@jest/globals';
 import { setupDOM, cleanupDOM } from './test-utils.js';
 
-import '../script.js';
+import '../public/script.js';
 
 describe('Coming Soon Page', () => {
   beforeEach(() => {

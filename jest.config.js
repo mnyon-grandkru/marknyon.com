@@ -8,7 +8,7 @@ export default {
     '**/__tests__/**/*.test.js',
   ],
   collectCoverageFrom: [
-    'script.js',
+    'public/script.js',
     '!**/node_modules/**',
     '!**/coverage/**'
   ],
