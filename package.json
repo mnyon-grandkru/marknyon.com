@@ -9,7 +9,8 @@
     "test:coverage": "NODE_OPTIONS=--experimental-vm-modules jest --coverage",
     "test:tdd": "NODE_OPTIONS=--experimental-vm-modules jest --watch --verbose",
     "dev": "wrangler dev",
-    "deploy": "wrangler deploy"
+    "deploy": "wrangler deploy",
+    "deploy:domains": "wrangler deploy -c wrangler.custom-domains.jsonc"
   },
   "repository": {
     "type": "git",

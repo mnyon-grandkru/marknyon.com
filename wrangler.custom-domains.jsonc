@@ -6,5 +6,15 @@
   "workers_dev": true,
   "assets": {
     "directory": "./public"
-  }
+  },
+  "routes": [
+    {
+      "pattern": "marknyon.com",
+      "custom_domain": true
+    },
+    {
+      "pattern": "www.marknyon.com",
+      "custom_domain": true
+    }
+  ]
 }
